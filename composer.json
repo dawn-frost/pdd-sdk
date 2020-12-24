@@ -1,18 +1,14 @@
 {
+    "name": "dawn-frost/pdd-sdk",
+    "description": "拼多多sdk",
     "require": {
         "php": "^5.5|^7.0",
         "ext-curl": "*",
         "ext-json": "*"
     },
-    "repositories": {
-        "packagist": {
-            "type": "composer",
-            "url": "https://mirrors.aliyun.com/composer/"
-        }
-    },
     "autoload": {
         "psr-4": {
-            "Com\\Pdd\\Pop\\Sdk\\": "src/"
+            "Pdd\\Sdk\\": "src/"
         }
     }
 }
