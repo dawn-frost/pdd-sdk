@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Com\\Pdd\\Pop\\Sdk": "src/"
+            "Com\\Pdd\\Pop\\Sdk\\": "src/"
         }
     },
     "license": "MIT",
