@@ -1,44 +1,42 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+namespace DawnFrost\Pdd\Api\Request;
+
+use DawnFrost\Pdd\PopBaseHttpRequest;
 
 class PddAdApiKeywordRecommendGetRequest extends PopBaseHttpRequest
 {
     public function __construct()
-	{
+    {
+    }
 
-	}
-	/**
-	* @JsonProperty(Long, "goodsId")
-	*/
-	private $goodsId;
+    /**
+     * @JsonProperty(Long, "goodsId")
+     */
+    private $goodsId;
 
-	protected function setUserParams(&$params)
-	{
-		$this->setUserParam($params, "goodsId", $this->goodsId);
+    protected function setUserParams(&$params)
+    {
+        $this->setUserParam($params, 'goodsId', $this->goodsId);
+    }
 
-	}
+    public function getVersion()
+    {
+        return 'V1';
+    }
 
-	public function getVersion()
-	{
-		return "V1";
-	}
+    public function getDataType()
+    {
+        return 'JSON';
+    }
 
-	public function getDataType()
-	{
-		return "JSON";
-	}
+    public function getType()
+    {
+        return 'pdd.ad.api.keyword.recommend.get';
+    }
 
-	public function getType()
-	{
-		return "pdd.ad.api.keyword.recommend.get";
-	}
-
-	public function setGoodsId($goodsId)
-	{
-		$this->goodsId = $goodsId;
-	}
-
+    public function setGoodsId($goodsId)
+    {
+        $this->goodsId = $goodsId;
+    }
 }

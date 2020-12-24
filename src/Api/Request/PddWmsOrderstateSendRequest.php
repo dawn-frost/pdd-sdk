@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddWmsOrderstateSendRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddWmsOrderstateSendRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOrderstateSendRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsOrderstateSendRequest_Request, "request")
 	*/
 	private $request;
 
@@ -52,12 +52,12 @@ class PddWmsOrderstateSendRequest_Request extends PopBaseJsonEntity
 	}
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOrderstateSendRequest_RequestOrder, "order")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsOrderstateSendRequest_RequestOrder, "order")
 	*/
 	private $order;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOrderstateSendRequest_RequestOrderLinesItem>, "orderLines")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddWmsOrderstateSendRequest_RequestOrderLinesItem>, "orderLines")
 	*/
 	private $orderLines;
 
@@ -67,7 +67,7 @@ class PddWmsOrderstateSendRequest_Request extends PopBaseJsonEntity
 	private $ownerCode;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOrderstateSendRequest_RequestProcess, "process")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsOrderstateSendRequest_RequestProcess, "process")
 	*/
 	private $process;
 

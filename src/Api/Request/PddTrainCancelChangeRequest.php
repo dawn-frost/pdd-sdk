@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddTrainCancelChangeRequest extends PopBaseHttpRequest
 {
@@ -21,7 +21,7 @@ class PddTrainCancelChangeRequest extends PopBaseHttpRequest
 	private $orderId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTrainCancelChangeRequest_PassengerInfosItem>, "passenger_infos")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTrainCancelChangeRequest_PassengerInfosItem>, "passenger_infos")
 	*/
 	private $passengerInfos;
 

@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddKttGroupCreateRequest extends PopBaseHttpRequest
 {
@@ -16,7 +16,7 @@ class PddKttGroupCreateRequest extends PopBaseHttpRequest
 	private $endTime;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddKttGroupCreateRequest_GoodsListItem>, "goods_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddKttGroupCreateRequest_GoodsListItem>, "goods_list")
 	*/
 	private $goodsList;
 
@@ -137,7 +137,7 @@ class PddKttGroupCreateRequest_GoodsListItem extends PopBaseJsonEntity
 	private $picUrlList;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddKttGroupCreateRequest_GoodsListItemSkuListItem>, "sku_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddKttGroupCreateRequest_GoodsListItemSkuListItem>, "sku_list")
 	*/
 	private $skuList;
 

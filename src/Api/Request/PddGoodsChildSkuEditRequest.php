@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddGoodsChildSkuEditRequest extends PopBaseHttpRequest
 {
@@ -21,7 +21,7 @@ class PddGoodsChildSkuEditRequest extends PopBaseHttpRequest
 	private $goodsId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsChildSkuEditRequest_SkusItem>, "skus")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsChildSkuEditRequest_SkusItem>, "skus")
 	*/
 	private $skus;
 
@@ -85,7 +85,7 @@ class PddGoodsChildSkuEditRequest_SkusItem extends PopBaseJsonEntity
 	}
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsChildSkuEditRequest_SkusItemChildSkusItem>, "child_skus")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsChildSkuEditRequest_SkusItemChildSkusItem>, "child_skus")
 	*/
 	private $childSkus;
 

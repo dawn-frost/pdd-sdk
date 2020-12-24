@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFlightOrderCheckSeatPriceRequest extends PopBaseHttpRequest
 {
@@ -36,12 +36,12 @@ class PddFlightOrderCheckSeatPriceRequest extends PopBaseHttpRequest
 	private $productId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightOrderCheckSeatPriceRequest_FlightInfoListItem>, "flight_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightOrderCheckSeatPriceRequest_FlightInfoListItem>, "flight_info_list")
 	*/
 	private $flightInfoList;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightOrderCheckSeatPriceRequest_PriceInfoListItem>, "price_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightOrderCheckSeatPriceRequest_PriceInfoListItem>, "price_info_list")
 	*/
 	private $priceInfoList;
 
@@ -183,7 +183,7 @@ class PddFlightOrderCheckSeatPriceRequest_FlightInfoListItem extends PopBaseJson
 	private $sequenceNo;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightOrderCheckSeatPriceRequest_FlightInfoListItemCabinInfoListItem>, "cabin_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightOrderCheckSeatPriceRequest_FlightInfoListItemCabinInfoListItem>, "cabin_info_list")
 	*/
 	private $cabinInfoList;
 

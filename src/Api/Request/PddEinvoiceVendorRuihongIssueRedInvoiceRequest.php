@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddEinvoiceVendorRuihongIssueRedInvoiceRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddEinvoiceVendorRuihongIssueRedInvoiceRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueRedInvoiceRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueRedInvoiceRequest_Request, "request")
 	*/
 	private $request;
 
@@ -72,12 +72,12 @@ class PddEinvoiceVendorRuihongIssueRedInvoiceRequest_Request extends PopBaseJson
 	private $reason;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueRedInvoiceRequest_RequestItemsItem>, "items")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueRedInvoiceRequest_RequestItemsItem>, "items")
 	*/
 	private $items;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueRedInvoiceRequest_RequestExtendedParams, "extendedParams")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueRedInvoiceRequest_RequestExtendedParams, "extendedParams")
 	*/
 	private $extendedParams;
 
@@ -92,7 +92,7 @@ class PddEinvoiceVendorRuihongIssueRedInvoiceRequest_Request extends PopBaseJson
 	private $cmdName;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueRedInvoiceRequest_RequestDynamicParams, "dynamicParams")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueRedInvoiceRequest_RequestDynamicParams, "dynamicParams")
 	*/
 	private $dynamicParams;
 

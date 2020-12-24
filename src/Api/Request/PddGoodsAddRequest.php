@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddGoodsAddRequest extends PopBaseHttpRequest
 {
@@ -26,7 +26,7 @@ class PddGoodsAddRequest extends PopBaseHttpRequest
 	private $carouselGallery;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsAddRequest_CarouselVideoItem>, "carousel_video")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsAddRequest_CarouselVideoItem>, "carousel_video")
 	*/
 	private $carouselVideo;
 
@@ -71,7 +71,7 @@ class PddGoodsAddRequest extends PopBaseHttpRequest
 	private $detailGallery;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsAddRequest_ElecGoodsAttributes, "elec_goods_attributes")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddGoodsAddRequest_ElecGoodsAttributes, "elec_goods_attributes")
 	*/
 	private $elecGoodsAttributes;
 
@@ -86,17 +86,17 @@ class PddGoodsAddRequest extends PopBaseHttpRequest
 	private $goodsName;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsAddRequest_GoodsPropertiesItem>, "goods_properties")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsAddRequest_GoodsPropertiesItem>, "goods_properties")
 	*/
 	private $goodsProperties;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsAddRequest_GoodsTradeAttr, "goods_trade_attr")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddGoodsAddRequest_GoodsTradeAttr, "goods_trade_attr")
 	*/
 	private $goodsTradeAttr;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsAddRequest_GoodsTravelAttr, "goods_travel_attr")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddGoodsAddRequest_GoodsTravelAttr, "goods_travel_attr")
 	*/
 	private $goodsTravelAttr;
 
@@ -176,7 +176,7 @@ class PddGoodsAddRequest extends PopBaseHttpRequest
 	private $outSourceType;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsAddRequest_OverseaGoods, "oversea_goods")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddGoodsAddRequest_OverseaGoods, "oversea_goods")
 	*/
 	private $overseaGoods;
 
@@ -216,7 +216,7 @@ class PddGoodsAddRequest extends PopBaseHttpRequest
 	private $sizeSpecId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsAddRequest_SkuListItem>, "sku_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsAddRequest_SkuListItem>, "sku_list")
 	*/
 	private $skuList;
 
@@ -786,7 +786,7 @@ class PddGoodsAddRequest_GoodsTradeAttr extends PopBaseJsonEntity
 	private $advancesDays;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsAddRequest_GoodsTradeAttrBookingNotes, "booking_notes")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddGoodsAddRequest_GoodsTradeAttrBookingNotes, "booking_notes")
 	*/
 	private $bookingNotes;
 
@@ -961,7 +961,7 @@ class PddGoodsAddRequest_SkuListItem extends PopBaseJsonEntity
 	private $outSourceSkuId;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsAddRequest_SkuListItemOverseaSku, "oversea_sku")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddGoodsAddRequest_SkuListItemOverseaSku, "oversea_sku")
 	*/
 	private $overseaSku;
 

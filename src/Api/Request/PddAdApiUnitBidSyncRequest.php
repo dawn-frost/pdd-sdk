@@ -1,186 +1,173 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+namespace DawnFrost\Pdd\Api\Request;
+
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddAdApiUnitBidSyncRequest extends PopBaseHttpRequest
 {
     public function __construct()
-	{
+    {
+    }
 
-	}
-	/**
-	* @JsonProperty(Long, "adId")
-	*/
-	private $adId;
+    /**
+     * @JsonProperty(Long, "adId")
+     */
+    private $adId;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiUnitBidSyncRequest_AdUnitBidsItem>, "adUnitBids")
-	*/
-	private $adUnitBids;
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiUnitBidSyncRequest_AdUnitBidsItem>, "adUnitBids")
+     */
+    private $adUnitBids;
 
-	/**
-	* @JsonProperty(Integer, "bidReferenceType")
-	*/
-	private $bidReferenceType;
+    /**
+     * @JsonProperty(Integer, "bidReferenceType")
+     */
+    private $bidReferenceType;
 
-	protected function setUserParams(&$params)
-	{
-		$this->setUserParam($params, "adId", $this->adId);
-		$this->setUserParam($params, "adUnitBids", $this->adUnitBids);
-		$this->setUserParam($params, "bidReferenceType", $this->bidReferenceType);
+    protected function setUserParams(&$params)
+    {
+        $this->setUserParam($params, 'adId', $this->adId);
+        $this->setUserParam($params, 'adUnitBids', $this->adUnitBids);
+        $this->setUserParam($params, 'bidReferenceType', $this->bidReferenceType);
+    }
 
-	}
+    public function getVersion()
+    {
+        return 'V1';
+    }
 
-	public function getVersion()
-	{
-		return "V1";
-	}
+    public function getDataType()
+    {
+        return 'JSON';
+    }
 
-	public function getDataType()
-	{
-		return "JSON";
-	}
+    public function getType()
+    {
+        return 'pdd.ad.api.unit.bid.sync';
+    }
 
-	public function getType()
-	{
-		return "pdd.ad.api.unit.bid.sync";
-	}
+    public function setAdId($adId)
+    {
+        $this->adId = $adId;
+    }
 
-	public function setAdId($adId)
-	{
-		$this->adId = $adId;
-	}
+    public function setAdUnitBids($adUnitBids)
+    {
+        $this->adUnitBids = $adUnitBids;
+    }
 
-	public function setAdUnitBids($adUnitBids)
-	{
-		$this->adUnitBids = $adUnitBids;
-	}
-
-	public function setBidReferenceType($bidReferenceType)
-	{
-		$this->bidReferenceType = $bidReferenceType;
-	}
-
+    public function setBidReferenceType($bidReferenceType)
+    {
+        $this->bidReferenceType = $bidReferenceType;
+    }
 }
 
 class PddAdApiUnitBidSyncRequest_AdUnitBidsItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiUnitBidSyncRequest_AdUnitBidsItemAdTargetingVO, "adTargetingVO")
+     */
+    private $adTargetingVO;
 
-	}
+    /**
+     * @JsonProperty(Long, "bidReferenceId")
+     */
+    private $bidReferenceId;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiUnitBidSyncRequest_AdUnitBidsItemAdTargetingVO, "adTargetingVO")
-	*/
-	private $adTargetingVO;
+    /**
+     * @JsonProperty(Long, "bidValue")
+     */
+    private $bidValue;
 
-	/**
-	* @JsonProperty(Long, "bidReferenceId")
-	*/
-	private $bidReferenceId;
+    /**
+     * @JsonProperty(Long, "subBidReferenceId")
+     */
+    private $subBidReferenceId;
 
-	/**
-	* @JsonProperty(Long, "bidValue")
-	*/
-	private $bidValue;
+    public function setAdTargetingVO($adTargetingVO)
+    {
+        $this->adTargetingVO = $adTargetingVO;
+    }
 
-	/**
-	* @JsonProperty(Long, "subBidReferenceId")
-	*/
-	private $subBidReferenceId;
+    public function setBidReferenceId($bidReferenceId)
+    {
+        $this->bidReferenceId = $bidReferenceId;
+    }
 
-	public function setAdTargetingVO($adTargetingVO)
-	{
-		$this->adTargetingVO = $adTargetingVO;
-	}
+    public function setBidValue($bidValue)
+    {
+        $this->bidValue = $bidValue;
+    }
 
-	public function setBidReferenceId($bidReferenceId)
-	{
-		$this->bidReferenceId = $bidReferenceId;
-	}
-
-	public function setBidValue($bidValue)
-	{
-		$this->bidValue = $bidValue;
-	}
-
-	public function setSubBidReferenceId($subBidReferenceId)
-	{
-		$this->subBidReferenceId = $subBidReferenceId;
-	}
-
+    public function setSubBidReferenceId($subBidReferenceId)
+    {
+        $this->subBidReferenceId = $subBidReferenceId;
+    }
 }
 
 class PddAdApiUnitBidSyncRequest_AdUnitBidsItemAdTargetingVO extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiUnitBidSyncRequest_AdUnitBidsItemAdTargetingVOAdTargetingSet, "adTargetingSet")
+     */
+    private $adTargetingSet;
 
-	}
+    /**
+     * @JsonProperty(String, "targetingName")
+     */
+    private $targetingName;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiUnitBidSyncRequest_AdUnitBidsItemAdTargetingVOAdTargetingSet, "adTargetingSet")
-	*/
-	private $adTargetingSet;
+    public function setAdTargetingSet($adTargetingSet)
+    {
+        $this->adTargetingSet = $adTargetingSet;
+    }
 
-	/**
-	* @JsonProperty(String, "targetingName")
-	*/
-	private $targetingName;
-
-	public function setAdTargetingSet($adTargetingSet)
-	{
-		$this->adTargetingSet = $adTargetingSet;
-	}
-
-	public function setTargetingName($targetingName)
-	{
-		$this->targetingName = $targetingName;
-	}
-
+    public function setTargetingName($targetingName)
+    {
+        $this->targetingName = $targetingName;
+    }
 }
 
 class PddAdApiUnitBidSyncRequest_AdUnitBidsItemAdTargetingVOAdTargetingSet extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiUnitBidSyncRequest_AdUnitBidsItemAdTargetingVOAdTargetingSetAreaStruct, "areaStruct")
+     */
+    private $areaStruct;
 
-	}
-
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiUnitBidSyncRequest_AdUnitBidsItemAdTargetingVOAdTargetingSetAreaStruct, "areaStruct")
-	*/
-	private $areaStruct;
-
-	public function setAreaStruct($areaStruct)
-	{
-		$this->areaStruct = $areaStruct;
-	}
-
+    public function setAreaStruct($areaStruct)
+    {
+        $this->areaStruct = $areaStruct;
+    }
 }
 
 class PddAdApiUnitBidSyncRequest_AdUnitBidsItemAdTargetingVOAdTargetingSetAreaStruct extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(List<Integer>, "areaIds")
+     */
+    private $areaIds;
 
-	}
-
-	/**
-	* @JsonProperty(List<Integer>, "areaIds")
-	*/
-	private $areaIds;
-
-	public function setAreaIds($areaIds)
-	{
-		$this->areaIds = $areaIds;
-	}
-
+    public function setAreaIds($areaIds)
+    {
+        $this->areaIds = $areaIds;
+    }
 }

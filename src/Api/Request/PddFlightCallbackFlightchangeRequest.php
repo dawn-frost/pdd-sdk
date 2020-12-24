@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFlightCallbackFlightchangeRequest extends PopBaseHttpRequest
 {
@@ -21,7 +21,7 @@ class PddFlightCallbackFlightchangeRequest extends PopBaseHttpRequest
 	private $changeType;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddFlightCallbackFlightchangeRequest_FlightInfo, "flight_info")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddFlightCallbackFlightchangeRequest_FlightInfo, "flight_info")
 	*/
 	private $flightInfo;
 

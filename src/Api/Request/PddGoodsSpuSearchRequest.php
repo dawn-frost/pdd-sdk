@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddGoodsSpuSearchRequest extends PopBaseHttpRequest
 {
@@ -16,7 +16,7 @@ class PddGoodsSpuSearchRequest extends PopBaseHttpRequest
 	private $catId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsSpuSearchRequest_KeyPropItem>, "key_prop")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsSpuSearchRequest_KeyPropItem>, "key_prop")
 	*/
 	private $keyProp;
 

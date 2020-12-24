@@ -1,404 +1,385 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+namespace DawnFrost\Pdd\Api\Request;
+
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddCloudWaybillUpdateRequest extends PopBaseHttpRequest
 {
     public function __construct()
-	{
+    {
+    }
 
-	}
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequest, "waybill_cloud_print_update_request")
-	*/
-	private $waybillCloudPrintUpdateRequest;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequest, "waybill_cloud_print_update_request")
+     */
+    private $waybillCloudPrintUpdateRequest;
 
-	protected function setUserParams(&$params)
-	{
-		$this->setUserParam($params, "waybill_cloud_print_update_request", $this->waybillCloudPrintUpdateRequest);
+    protected function setUserParams(&$params)
+    {
+        $this->setUserParam($params, 'waybill_cloud_print_update_request', $this->waybillCloudPrintUpdateRequest);
+    }
 
-	}
+    public function getVersion()
+    {
+        return 'V1';
+    }
 
-	public function getVersion()
-	{
-		return "V1";
-	}
+    public function getDataType()
+    {
+        return 'JSON';
+    }
 
-	public function getDataType()
-	{
-		return "JSON";
-	}
+    public function getType()
+    {
+        return 'pdd.cloud.waybill.update';
+    }
 
-	public function getType()
-	{
-		return "pdd.cloud.waybill.update";
-	}
-
-	public function setWaybillCloudPrintUpdateRequest($waybillCloudPrintUpdateRequest)
-	{
-		$this->waybillCloudPrintUpdateRequest = $waybillCloudPrintUpdateRequest;
-	}
-
+    public function setWaybillCloudPrintUpdateRequest($waybillCloudPrintUpdateRequest)
+    {
+        $this->waybillCloudPrintUpdateRequest = $waybillCloudPrintUpdateRequest;
+    }
 }
 
 class PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequest extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "object_id")
+     */
+    private $objectId;
 
-	}
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestPackageInfo, "package_info")
+     */
+    private $packageInfo;
 
-	/**
-	* @JsonProperty(String, "object_id")
-	*/
-	private $objectId;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestRecipient, "recipient")
+     */
+    private $recipient;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestPackageInfo, "package_info")
-	*/
-	private $packageInfo;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestSender, "sender")
+     */
+    private $sender;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestRecipient, "recipient")
-	*/
-	private $recipient;
+    /**
+     * @JsonProperty(String, "template_url")
+     */
+    private $templateUrl;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestSender, "sender")
-	*/
-	private $sender;
+    /**
+     * @JsonProperty(String, "waybill_code")
+     */
+    private $waybillCode;
 
-	/**
-	* @JsonProperty(String, "template_url")
-	*/
-	private $templateUrl;
+    /**
+     * @JsonProperty(String, "wp_code")
+     */
+    private $wpCode;
 
-	/**
-	* @JsonProperty(String, "waybill_code")
-	*/
-	private $waybillCode;
+    /**
+     * @JsonProperty(String, "token")
+     */
+    private $token;
 
-	/**
-	* @JsonProperty(String, "wp_code")
-	*/
-	private $wpCode;
+    /**
+     * @JsonProperty(Long, "ext_id")
+     */
+    private $extId;
 
-	/**
-	* @JsonProperty(String, "token")
-	*/
-	private $token;
+    /**
+     * @JsonProperty(String, "ext_fields")
+     */
+    private $extFields;
 
-	/**
-	* @JsonProperty(Long, "ext_id")
-	*/
-	private $extId;
+    /**
+     * @JsonProperty(String, "order_sn")
+     */
+    private $orderSn;
 
-	/**
-	* @JsonProperty(String, "ext_fields")
-	*/
-	private $extFields;
+    public function setObjectId($objectId)
+    {
+        $this->objectId = $objectId;
+    }
 
-	/**
-	* @JsonProperty(String, "order_sn")
-	*/
-	private $orderSn;
+    public function setPackageInfo($packageInfo)
+    {
+        $this->packageInfo = $packageInfo;
+    }
 
-	public function setObjectId($objectId)
-	{
-		$this->objectId = $objectId;
-	}
+    public function setRecipient($recipient)
+    {
+        $this->recipient = $recipient;
+    }
 
-	public function setPackageInfo($packageInfo)
-	{
-		$this->packageInfo = $packageInfo;
-	}
+    public function setSender($sender)
+    {
+        $this->sender = $sender;
+    }
 
-	public function setRecipient($recipient)
-	{
-		$this->recipient = $recipient;
-	}
+    public function setTemplateUrl($templateUrl)
+    {
+        $this->templateUrl = $templateUrl;
+    }
 
-	public function setSender($sender)
-	{
-		$this->sender = $sender;
-	}
+    public function setWaybillCode($waybillCode)
+    {
+        $this->waybillCode = $waybillCode;
+    }
 
-	public function setTemplateUrl($templateUrl)
-	{
-		$this->templateUrl = $templateUrl;
-	}
+    public function setWpCode($wpCode)
+    {
+        $this->wpCode = $wpCode;
+    }
 
-	public function setWaybillCode($waybillCode)
-	{
-		$this->waybillCode = $waybillCode;
-	}
+    public function setToken($token)
+    {
+        $this->token = $token;
+    }
 
-	public function setWpCode($wpCode)
-	{
-		$this->wpCode = $wpCode;
-	}
+    public function setExtId($extId)
+    {
+        $this->extId = $extId;
+    }
 
-	public function setToken($token)
-	{
-		$this->token = $token;
-	}
+    public function setExtFields($extFields)
+    {
+        $this->extFields = $extFields;
+    }
 
-	public function setExtId($extId)
-	{
-		$this->extId = $extId;
-	}
-
-	public function setExtFields($extFields)
-	{
-		$this->extFields = $extFields;
-	}
-
-	public function setOrderSn($orderSn)
-	{
-		$this->orderSn = $orderSn;
-	}
-
+    public function setOrderSn($orderSn)
+    {
+        $this->orderSn = $orderSn;
+    }
 }
 
 class PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestPackageInfo extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestPackageInfoItemsItem>, "items")
+     */
+    private $items;
 
-	}
+    /**
+     * @JsonProperty(Long, "volume")
+     */
+    private $volume;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestPackageInfoItemsItem>, "items")
-	*/
-	private $items;
+    /**
+     * @JsonProperty(Long, "weight")
+     */
+    private $weight;
 
-	/**
-	* @JsonProperty(Long, "volume")
-	*/
-	private $volume;
+    public function setItems($items)
+    {
+        $this->items = $items;
+    }
 
-	/**
-	* @JsonProperty(Long, "weight")
-	*/
-	private $weight;
+    public function setVolume($volume)
+    {
+        $this->volume = $volume;
+    }
 
-	public function setItems($items)
-	{
-		$this->items = $items;
-	}
-
-	public function setVolume($volume)
-	{
-		$this->volume = $volume;
-	}
-
-	public function setWeight($weight)
-	{
-		$this->weight = $weight;
-	}
-
+    public function setWeight($weight)
+    {
+        $this->weight = $weight;
+    }
 }
 
 class PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestPackageInfoItemsItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Integer, "count")
+     */
+    private $count;
 
-	}
+    /**
+     * @JsonProperty(String, "name")
+     */
+    private $name;
 
-	/**
-	* @JsonProperty(Integer, "count")
-	*/
-	private $count;
+    /**
+     * @JsonProperty(String, "ext_json")
+     */
+    private $extJson;
 
-	/**
-	* @JsonProperty(String, "name")
-	*/
-	private $name;
+    public function setCount($count)
+    {
+        $this->count = $count;
+    }
 
-	/**
-	* @JsonProperty(String, "ext_json")
-	*/
-	private $extJson;
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
 
-	public function setCount($count)
-	{
-		$this->count = $count;
-	}
-
-	public function setName($name)
-	{
-		$this->name = $name;
-	}
-
-	public function setExtJson($extJson)
-	{
-		$this->extJson = $extJson;
-	}
-
+    public function setExtJson($extJson)
+    {
+        $this->extJson = $extJson;
+    }
 }
 
 class PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestRecipient extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestRecipientAddress, "address")
+     */
+    private $address;
 
-	}
+    /**
+     * @JsonProperty(String, "mobile")
+     */
+    private $mobile;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestRecipientAddress, "address")
-	*/
-	private $address;
+    /**
+     * @JsonProperty(String, "name")
+     */
+    private $name;
 
-	/**
-	* @JsonProperty(String, "mobile")
-	*/
-	private $mobile;
+    /**
+     * @JsonProperty(String, "phone")
+     */
+    private $phone;
 
-	/**
-	* @JsonProperty(String, "name")
-	*/
-	private $name;
+    public function setAddress($address)
+    {
+        $this->address = $address;
+    }
 
-	/**
-	* @JsonProperty(String, "phone")
-	*/
-	private $phone;
+    public function setMobile($mobile)
+    {
+        $this->mobile = $mobile;
+    }
 
-	public function setAddress($address)
-	{
-		$this->address = $address;
-	}
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
 
-	public function setMobile($mobile)
-	{
-		$this->mobile = $mobile;
-	}
-
-	public function setName($name)
-	{
-		$this->name = $name;
-	}
-
-	public function setPhone($phone)
-	{
-		$this->phone = $phone;
-	}
-
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
+    }
 }
 
 class PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestRecipientAddress extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "city")
+     */
+    private $city;
 
-	}
+    /**
+     * @JsonProperty(String, "detail")
+     */
+    private $detail;
 
-	/**
-	* @JsonProperty(String, "city")
-	*/
-	private $city;
+    /**
+     * @JsonProperty(String, "district")
+     */
+    private $district;
 
-	/**
-	* @JsonProperty(String, "detail")
-	*/
-	private $detail;
+    /**
+     * @JsonProperty(String, "province")
+     */
+    private $province;
 
-	/**
-	* @JsonProperty(String, "district")
-	*/
-	private $district;
+    /**
+     * @JsonProperty(String, "town")
+     */
+    private $town;
 
-	/**
-	* @JsonProperty(String, "province")
-	*/
-	private $province;
+    /**
+     * @JsonProperty(String, "country")
+     */
+    private $country;
 
-	/**
-	* @JsonProperty(String, "town")
-	*/
-	private $town;
+    public function setCity($city)
+    {
+        $this->city = $city;
+    }
 
-	/**
-	* @JsonProperty(String, "country")
-	*/
-	private $country;
+    public function setDetail($detail)
+    {
+        $this->detail = $detail;
+    }
 
-	public function setCity($city)
-	{
-		$this->city = $city;
-	}
+    public function setDistrict($district)
+    {
+        $this->district = $district;
+    }
 
-	public function setDetail($detail)
-	{
-		$this->detail = $detail;
-	}
+    public function setProvince($province)
+    {
+        $this->province = $province;
+    }
 
-	public function setDistrict($district)
-	{
-		$this->district = $district;
-	}
+    public function setTown($town)
+    {
+        $this->town = $town;
+    }
 
-	public function setProvince($province)
-	{
-		$this->province = $province;
-	}
-
-	public function setTown($town)
-	{
-		$this->town = $town;
-	}
-
-	public function setCountry($country)
-	{
-		$this->country = $country;
-	}
-
+    public function setCountry($country)
+    {
+        $this->country = $country;
+    }
 }
 
 class PddCloudWaybillUpdateRequest_WaybillCloudPrintUpdateRequestSender extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "mobile")
+     */
+    private $mobile;
 
-	}
+    /**
+     * @JsonProperty(String, "name")
+     */
+    private $name;
 
-	/**
-	* @JsonProperty(String, "mobile")
-	*/
-	private $mobile;
+    /**
+     * @JsonProperty(String, "phone")
+     */
+    private $phone;
 
-	/**
-	* @JsonProperty(String, "name")
-	*/
-	private $name;
+    public function setMobile($mobile)
+    {
+        $this->mobile = $mobile;
+    }
 
-	/**
-	* @JsonProperty(String, "phone")
-	*/
-	private $phone;
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
 
-	public function setMobile($mobile)
-	{
-		$this->mobile = $mobile;
-	}
-
-	public function setName($name)
-	{
-		$this->name = $name;
-	}
-
-	public function setPhone($phone)
-	{
-		$this->phone = $phone;
-	}
-
+    public function setPhone($phone)
+    {
+        $this->phone = $phone;
+    }
 }

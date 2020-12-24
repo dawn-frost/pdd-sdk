@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFdsWaybillGetRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddFdsWaybillGetRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequest, "param_fds_waybill_get_request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequest, "param_fds_waybill_get_request")
 	*/
 	private $paramFdsWaybillGetRequest;
 
@@ -52,12 +52,12 @@ class PddFdsWaybillGetRequest_ParamFdsWaybillGetRequest extends PopBaseJsonEntit
 	}
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestSender, "sender")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestSender, "sender")
 	*/
 	private $sender;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItem>, "trade_order_info_dtos")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItem>, "trade_order_info_dtos")
 	*/
 	private $tradeOrderInfoDtos;
 
@@ -92,7 +92,7 @@ class PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestSender extends PopBaseJso
 	}
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestSenderAddress, "address")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestSenderAddress, "address")
 	*/
 	private $address;
 
@@ -222,12 +222,12 @@ class PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItem ex
 	private $objectId;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemOrderInfo, "order_info")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemOrderInfo, "order_info")
 	*/
 	private $orderInfo;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemPackageInfo, "package_info")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemPackageInfo, "package_info")
 	*/
 	private $packageInfo;
 
@@ -287,7 +287,7 @@ class PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemOrd
 	private $orderChannelsType;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemOrderInfoTradeOrderListItem>, "trade_order_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemOrderInfoTradeOrderListItem>, "trade_order_list")
 	*/
 	private $tradeOrderList;
 
@@ -352,7 +352,7 @@ class PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemPac
 	private $id;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemPackageInfoItemsItem>, "items")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFdsWaybillGetRequest_ParamFdsWaybillGetRequestTradeOrderInfoDtosItemPackageInfoItemsItem>, "items")
 	*/
 	private $items;
 

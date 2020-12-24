@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddEinvoiceIssueInvoiceResultCallbackRuihongRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddEinvoiceIssueInvoiceResultCallbackRuihongRequest extends PopBaseHttpReq
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceIssueInvoiceResultCallbackRuihongRequest_Data, "data")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceIssueInvoiceResultCallbackRuihongRequest_Data, "data")
 	*/
 	private $data;
 
@@ -62,7 +62,7 @@ class PddEinvoiceIssueInvoiceResultCallbackRuihongRequest_Data extends PopBaseJs
 	private $einvoiceApiVersion;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceIssueInvoiceResultCallbackRuihongRequest_DataInvoice, "invoice")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceIssueInvoiceResultCallbackRuihongRequest_DataInvoice, "invoice")
 	*/
 	private $invoice;
 
@@ -192,7 +192,7 @@ class PddEinvoiceIssueInvoiceResultCallbackRuihongRequest_DataInvoice extends Po
 	private $invPdf;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceIssueInvoiceResultCallbackRuihongRequest_DataInvoiceItemsItem>, "items")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddEinvoiceIssueInvoiceResultCallbackRuihongRequest_DataInvoiceItemsItem>, "items")
 	*/
 	private $items;
 

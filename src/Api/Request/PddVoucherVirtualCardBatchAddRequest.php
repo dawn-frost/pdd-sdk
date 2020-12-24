@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddVoucherVirtualCardBatchAddRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddVoucherVirtualCardBatchAddRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddVoucherVirtualCardBatchAddRequest_Data, "data")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddVoucherVirtualCardBatchAddRequest_Data, "data")
 	*/
 	private $data;
 
@@ -57,7 +57,7 @@ class PddVoucherVirtualCardBatchAddRequest_Data extends PopBaseJsonEntity
 	private $chargeAddress;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddVoucherVirtualCardBatchAddRequest_DataDataListItem>, "dataList")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddVoucherVirtualCardBatchAddRequest_DataDataListItem>, "dataList")
 	*/
 	private $dataList;
 

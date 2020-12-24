@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFlightCallbackConfirmRefundRequest extends PopBaseHttpRequest
 {
@@ -36,7 +36,7 @@ class PddFlightCallbackConfirmRefundRequest extends PopBaseHttpRequest
 	private $parentTravelSn;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightCallbackConfirmRefundRequest_PassengerInfoListItem>, "passenger_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightCallbackConfirmRefundRequest_PassengerInfoListItem>, "passenger_info_list")
 	*/
 	private $passengerInfoList;
 
@@ -56,7 +56,7 @@ class PddFlightCallbackConfirmRefundRequest extends PopBaseHttpRequest
 	private $refundTime;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightCallbackConfirmRefundRequest_SubRefundInfoListItem>, "sub_refund_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightCallbackConfirmRefundRequest_SubRefundInfoListItem>, "sub_refund_info_list")
 	*/
 	private $subRefundInfoList;
 
@@ -257,7 +257,7 @@ class PddFlightCallbackConfirmRefundRequest_SubRefundInfoListItem extends PopBas
 	private $no;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightCallbackConfirmRefundRequest_SubRefundInfoListItemPassengerInfoListItem>, "passenger_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightCallbackConfirmRefundRequest_SubRefundInfoListItemPassengerInfoListItem>, "passenger_info_list")
 	*/
 	private $passengerInfoList;
 

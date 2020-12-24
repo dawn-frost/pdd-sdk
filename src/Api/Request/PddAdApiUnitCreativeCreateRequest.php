@@ -1,135 +1,125 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+namespace DawnFrost\Pdd\Api\Request;
+
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddAdApiUnitCreativeCreateRequest extends PopBaseHttpRequest
 {
     public function __construct()
-	{
+    {
+    }
 
-	}
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiUnitCreativeCreateRequest_AdCreativeCreateMessage, "adCreativeCreateMessage")
-	*/
-	private $adCreativeCreateMessage;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiUnitCreativeCreateRequest_AdCreativeCreateMessage, "adCreativeCreateMessage")
+     */
+    private $adCreativeCreateMessage;
 
-	/**
-	* @JsonProperty(Long, "adId")
-	*/
-	private $adId;
+    /**
+     * @JsonProperty(Long, "adId")
+     */
+    private $adId;
 
-	protected function setUserParams(&$params)
-	{
-		$this->setUserParam($params, "adCreativeCreateMessage", $this->adCreativeCreateMessage);
-		$this->setUserParam($params, "adId", $this->adId);
+    protected function setUserParams(&$params)
+    {
+        $this->setUserParam($params, 'adCreativeCreateMessage', $this->adCreativeCreateMessage);
+        $this->setUserParam($params, 'adId', $this->adId);
+    }
 
-	}
+    public function getVersion()
+    {
+        return 'V1';
+    }
 
-	public function getVersion()
-	{
-		return "V1";
-	}
+    public function getDataType()
+    {
+        return 'JSON';
+    }
 
-	public function getDataType()
-	{
-		return "JSON";
-	}
+    public function getType()
+    {
+        return 'pdd.ad.api.unit.creative.create';
+    }
 
-	public function getType()
-	{
-		return "pdd.ad.api.unit.creative.create";
-	}
+    public function setAdCreativeCreateMessage($adCreativeCreateMessage)
+    {
+        $this->adCreativeCreateMessage = $adCreativeCreateMessage;
+    }
 
-	public function setAdCreativeCreateMessage($adCreativeCreateMessage)
-	{
-		$this->adCreativeCreateMessage = $adCreativeCreateMessage;
-	}
-
-	public function setAdId($adId)
-	{
-		$this->adId = $adId;
-	}
-
+    public function setAdId($adId)
+    {
+        $this->adId = $adId;
+    }
 }
 
 class PddAdApiUnitCreativeCreateRequest_AdCreativeCreateMessage extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiUnitCreativeCreateRequest_AdCreativeCreateMessageAdImageVOListItem>, "adImageVOList")
+     */
+    private $adImageVOList;
 
-	}
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiUnitCreativeCreateRequest_AdCreativeCreateMessageAdTextVOListItem>, "adTextVOList")
+     */
+    private $adTextVOList;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiUnitCreativeCreateRequest_AdCreativeCreateMessageAdImageVOListItem>, "adImageVOList")
-	*/
-	private $adImageVOList;
+    /**
+     * @JsonProperty(Long, "creativeSpecificationId")
+     */
+    private $creativeSpecificationId;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiUnitCreativeCreateRequest_AdCreativeCreateMessageAdTextVOListItem>, "adTextVOList")
-	*/
-	private $adTextVOList;
+    public function setAdImageVOList($adImageVOList)
+    {
+        $this->adImageVOList = $adImageVOList;
+    }
 
-	/**
-	* @JsonProperty(Long, "creativeSpecificationId")
-	*/
-	private $creativeSpecificationId;
+    public function setAdTextVOList($adTextVOList)
+    {
+        $this->adTextVOList = $adTextVOList;
+    }
 
-	public function setAdImageVOList($adImageVOList)
-	{
-		$this->adImageVOList = $adImageVOList;
-	}
-
-	public function setAdTextVOList($adTextVOList)
-	{
-		$this->adTextVOList = $adTextVOList;
-	}
-
-	public function setCreativeSpecificationId($creativeSpecificationId)
-	{
-		$this->creativeSpecificationId = $creativeSpecificationId;
-	}
-
+    public function setCreativeSpecificationId($creativeSpecificationId)
+    {
+        $this->creativeSpecificationId = $creativeSpecificationId;
+    }
 }
 
 class PddAdApiUnitCreativeCreateRequest_AdCreativeCreateMessageAdImageVOListItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "imageUrl")
+     */
+    private $imageUrl;
 
-	}
-
-	/**
-	* @JsonProperty(String, "imageUrl")
-	*/
-	private $imageUrl;
-
-	public function setImageUrl($imageUrl)
-	{
-		$this->imageUrl = $imageUrl;
-	}
-
+    public function setImageUrl($imageUrl)
+    {
+        $this->imageUrl = $imageUrl;
+    }
 }
 
 class PddAdApiUnitCreativeCreateRequest_AdCreativeCreateMessageAdTextVOListItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "text")
+     */
+    private $text;
 
-	}
-
-	/**
-	* @JsonProperty(String, "text")
-	*/
-	private $text;
-
-	public function setText($text)
-	{
-		$this->text = $text;
-	}
-
+    public function setText($text)
+    {
+        $this->text = $text;
+    }
 }

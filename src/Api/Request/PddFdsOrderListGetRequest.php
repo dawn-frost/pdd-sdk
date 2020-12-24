@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFdsOrderListGetRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddFdsOrderListGetRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddFdsOrderListGetRequest_ParamFdsOrderListGetRequest, "param_fds_order_list_get_request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddFdsOrderListGetRequest_ParamFdsOrderListGetRequest, "param_fds_order_list_get_request")
 	*/
 	private $paramFdsOrderListGetRequest;
 

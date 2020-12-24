@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddGoodsFilespaceImageUploadRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddGoodsFilespaceImageUploadRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsFilespaceImageUploadRequest_FILE, "file")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddGoodsFilespaceImageUploadRequest_FILE, "file")
 	*/
 	private $file;
 

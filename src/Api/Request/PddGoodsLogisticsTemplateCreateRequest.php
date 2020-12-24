@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddGoodsLogisticsTemplateCreateRequest extends PopBaseHttpRequest
 {
@@ -11,12 +11,12 @@ class PddGoodsLogisticsTemplateCreateRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsLogisticsTemplateCreateRequest_CostTemplateListItem>, "cost_template_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsLogisticsTemplateCreateRequest_CostTemplateListItem>, "cost_template_list")
 	*/
 	private $costTemplateList;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsLogisticsTemplateCreateRequest_FreeProvinceListItem>, "free_province_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsLogisticsTemplateCreateRequest_FreeProvinceListItem>, "free_province_list")
 	*/
 	private $freeProvinceList;
 
@@ -158,7 +158,7 @@ class PddGoodsLogisticsTemplateCreateRequest_CostTemplateListItem extends PopBas
 	private $haveFreeMinAmount;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsLogisticsTemplateCreateRequest_CostTemplateListItemCostProvinceListItem>, "cost_province_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsLogisticsTemplateCreateRequest_CostTemplateListItemCostProvinceListItem>, "cost_province_list")
 	*/
 	private $costProvinceList;
 

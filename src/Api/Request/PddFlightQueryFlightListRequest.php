@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFlightQueryFlightListRequest extends PopBaseHttpRequest
 {
@@ -16,7 +16,7 @@ class PddFlightQueryFlightListRequest extends PopBaseHttpRequest
 	private $carrierCodeList;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightQueryFlightListRequest_SegmentListItem>, "segment_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightQueryFlightListRequest_SegmentListItem>, "segment_list")
 	*/
 	private $segmentList;
 

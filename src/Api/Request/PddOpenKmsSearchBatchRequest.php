@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddOpenKmsSearchBatchRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddOpenKmsSearchBatchRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddOpenKmsSearchBatchRequest_InputListItem>, "input_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddOpenKmsSearchBatchRequest_InputListItem>, "input_list")
 	*/
 	private $inputList;
 

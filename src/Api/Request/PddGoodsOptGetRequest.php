@@ -1,8 +1,8 @@
 <?php
 
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseHttpRequest;
 
 // 获得拼多多商品标签列表（非商品类目cat，当前仅开放给多多客使用）
 class PddGoodsOptGetRequest extends PopBaseHttpRequest

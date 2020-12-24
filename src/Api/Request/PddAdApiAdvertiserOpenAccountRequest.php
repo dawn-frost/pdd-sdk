@@ -1,33 +1,31 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+namespace DawnFrost\Pdd\Api\Request;
+
+use DawnFrost\Pdd\PopBaseHttpRequest;
 
 class PddAdApiAdvertiserOpenAccountRequest extends PopBaseHttpRequest
 {
     public function __construct()
-	{
+    {
+    }
 
-	}
-	protected function setUserParams(&$params)
-	{
+    protected function setUserParams(&$params)
+    {
+    }
 
-	}
+    public function getVersion()
+    {
+        return 'V1';
+    }
 
-	public function getVersion()
-	{
-		return "V1";
-	}
+    public function getDataType()
+    {
+        return 'JSON';
+    }
 
-	public function getDataType()
-	{
-		return "JSON";
-	}
-
-	public function getType()
-	{
-		return "pdd.ad.api.advertiser.open.account";
-	}
-
+    public function getType()
+    {
+        return 'pdd.ad.api.advertiser.open.account';
+    }
 }

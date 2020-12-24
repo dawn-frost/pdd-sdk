@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddGoodsSkuPriceUpdateRequest extends PopBaseHttpRequest
 {
@@ -26,7 +26,7 @@ class PddGoodsSkuPriceUpdateRequest extends PopBaseHttpRequest
 	private $marketPriceInYuan;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddGoodsSkuPriceUpdateRequest_SkuPriceListItem>, "sku_price_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddGoodsSkuPriceUpdateRequest_SkuPriceListItem>, "sku_price_list")
 	*/
 	private $skuPriceList;
 

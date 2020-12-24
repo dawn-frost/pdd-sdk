@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddVoucherRealtimeOrdernoGetRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddVoucherRealtimeOrdernoGetRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddVoucherRealtimeOrdernoGetRequest_Data, "data")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddVoucherRealtimeOrdernoGetRequest_Data, "data")
 	*/
 	private $data;
 

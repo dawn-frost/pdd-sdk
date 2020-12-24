@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddWaybillUpdateRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddWaybillUpdateRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequest, "param_waybill_cloud_print_update_request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequest, "param_waybill_cloud_print_update_request")
 	*/
 	private $paramWaybillCloudPrintUpdateRequest;
 
@@ -57,17 +57,17 @@ class PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequest extends PopBas
 	private $objectId;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestPackageInfo, "package_info")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestPackageInfo, "package_info")
 	*/
 	private $packageInfo;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestRecipient, "recipient")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestRecipient, "recipient")
 	*/
 	private $recipient;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestSender, "sender")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestSender, "sender")
 	*/
 	private $sender;
 
@@ -132,7 +132,7 @@ class PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestPackageInfo ext
 	}
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestPackageInfoItemsItem>, "items")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestPackageInfoItemsItem>, "items")
 	*/
 	private $items;
 
@@ -202,7 +202,7 @@ class PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestRecipient exten
 	}
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestRecipientAddress, "address")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWaybillUpdateRequest_ParamWaybillCloudPrintUpdateRequestRecipientAddress, "address")
 	*/
 	private $address;
 

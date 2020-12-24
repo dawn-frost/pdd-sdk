@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddEinvoiceOutboundRuihongQueryTaxDiskStatusRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddEinvoiceOutboundRuihongQueryTaxDiskStatusRequest extends PopBaseHttpReq
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceOutboundRuihongQueryTaxDiskStatusRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceOutboundRuihongQueryTaxDiskStatusRequest_Request, "request")
 	*/
 	private $request;
 

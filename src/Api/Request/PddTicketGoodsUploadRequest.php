@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddTicketGoodsUploadRequest extends PopBaseHttpRequest
 {
@@ -16,7 +16,7 @@ class PddTicketGoodsUploadRequest extends PopBaseHttpRequest
 	private $carouselGallery;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTicketGoodsUploadRequest_CarouselVideoItem>, "carousel_video")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTicketGoodsUploadRequest_CarouselVideoItem>, "carousel_video")
 	*/
 	private $carouselVideo;
 
@@ -56,7 +56,7 @@ class PddTicketGoodsUploadRequest extends PopBaseHttpRequest
 	private $goodsName;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTicketGoodsUploadRequest_GoodsPropertiesItem>, "goods_properties")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTicketGoodsUploadRequest_GoodsPropertiesItem>, "goods_properties")
 	*/
 	private $goodsProperties;
 
@@ -81,7 +81,7 @@ class PddTicketGoodsUploadRequest extends PopBaseHttpRequest
 	private $reserveLimitRule;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTicketGoodsUploadRequest_SkuListItem>, "sku_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTicketGoodsUploadRequest_SkuListItem>, "sku_list")
 	*/
 	private $skuList;
 
@@ -328,7 +328,7 @@ class PddTicketGoodsUploadRequest_SkuListItem extends PopBaseJsonEntity
 	}
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTicketGoodsUploadRequest_SkuListItemChildSkusItem>, "child_skus")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTicketGoodsUploadRequest_SkuListItemChildSkusItem>, "child_skus")
 	*/
 	private $childSkus;
 

@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFlightChangeApplyRequest extends PopBaseHttpRequest
 {
@@ -41,12 +41,12 @@ class PddFlightChangeApplyRequest extends PopBaseHttpRequest
 	private $attachmentPath;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightChangeApplyRequest_PassengerInfoListItem>, "passenger_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightChangeApplyRequest_PassengerInfoListItem>, "passenger_info_list")
 	*/
 	private $passengerInfoList;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightChangeApplyRequest_FlightInfoListItem>, "flight_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightChangeApplyRequest_FlightInfoListItem>, "flight_info_list")
 	*/
 	private $flightInfoList;
 
@@ -224,7 +224,7 @@ class PddFlightChangeApplyRequest_FlightInfoListItem extends PopBaseJsonEntity
 	private $sequenceNo;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightChangeApplyRequest_FlightInfoListItemCabinInfoListItem>, "cabin_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightChangeApplyRequest_FlightInfoListItemCabinInfoListItem>, "cabin_info_list")
 	*/
 	private $cabinInfoList;
 

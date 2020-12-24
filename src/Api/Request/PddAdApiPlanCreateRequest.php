@@ -1,707 +1,652 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+namespace DawnFrost\Pdd\Api\Request;
+
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddAdApiPlanCreateRequest extends PopBaseHttpRequest
 {
     public function __construct()
-	{
+    {
+    }
 
-	}
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdPlanCreateMessage, "adPlanCreateMessage")
-	*/
-	private $adPlanCreateMessage;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdPlanCreateMessage, "adPlanCreateMessage")
+     */
+    private $adPlanCreateMessage;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItem>, "adUnitCreateComplexMessageList")
-	*/
-	private $adUnitCreateComplexMessageList;
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItem>, "adUnitCreateComplexMessageList")
+     */
+    private $adUnitCreateComplexMessageList;
 
-	/**
-	* @JsonProperty(Integer, "planStrategy")
-	*/
-	private $planStrategy;
+    /**
+     * @JsonProperty(Integer, "planStrategy")
+     */
+    private $planStrategy;
 
-	/**
-	* @JsonProperty(Integer, "scenesType")
-	*/
-	private $scenesType;
+    /**
+     * @JsonProperty(Integer, "scenesType")
+     */
+    private $scenesType;
 
-	protected function setUserParams(&$params)
-	{
-		$this->setUserParam($params, "adPlanCreateMessage", $this->adPlanCreateMessage);
-		$this->setUserParam($params, "adUnitCreateComplexMessageList", $this->adUnitCreateComplexMessageList);
-		$this->setUserParam($params, "planStrategy", $this->planStrategy);
-		$this->setUserParam($params, "scenesType", $this->scenesType);
+    protected function setUserParams(&$params)
+    {
+        $this->setUserParam($params, 'adPlanCreateMessage', $this->adPlanCreateMessage);
+        $this->setUserParam($params, 'adUnitCreateComplexMessageList', $this->adUnitCreateComplexMessageList);
+        $this->setUserParam($params, 'planStrategy', $this->planStrategy);
+        $this->setUserParam($params, 'scenesType', $this->scenesType);
+    }
 
-	}
+    public function getVersion()
+    {
+        return 'V1';
+    }
 
-	public function getVersion()
-	{
-		return "V1";
-	}
+    public function getDataType()
+    {
+        return 'JSON';
+    }
 
-	public function getDataType()
-	{
-		return "JSON";
-	}
+    public function getType()
+    {
+        return 'pdd.ad.api.plan.create';
+    }
 
-	public function getType()
-	{
-		return "pdd.ad.api.plan.create";
-	}
+    public function setAdPlanCreateMessage($adPlanCreateMessage)
+    {
+        $this->adPlanCreateMessage = $adPlanCreateMessage;
+    }
 
-	public function setAdPlanCreateMessage($adPlanCreateMessage)
-	{
-		$this->adPlanCreateMessage = $adPlanCreateMessage;
-	}
+    public function setAdUnitCreateComplexMessageList($adUnitCreateComplexMessageList)
+    {
+        $this->adUnitCreateComplexMessageList = $adUnitCreateComplexMessageList;
+    }
 
-	public function setAdUnitCreateComplexMessageList($adUnitCreateComplexMessageList)
-	{
-		$this->adUnitCreateComplexMessageList = $adUnitCreateComplexMessageList;
-	}
+    public function setPlanStrategy($planStrategy)
+    {
+        $this->planStrategy = $planStrategy;
+    }
 
-	public function setPlanStrategy($planStrategy)
-	{
-		$this->planStrategy = $planStrategy;
-	}
-
-	public function setScenesType($scenesType)
-	{
-		$this->scenesType = $scenesType;
-	}
-
+    public function setScenesType($scenesType)
+    {
+        $this->scenesType = $scenesType;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdPlanCreateMessage extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Long, "maxCost")
+     */
+    private $maxCost;
 
-	}
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdPlanCreateMessagePlanDiscount, "planDiscount")
+     */
+    private $planDiscount;
 
-	/**
-	* @JsonProperty(Long, "maxCost")
-	*/
-	private $maxCost;
+    /**
+     * @JsonProperty(String, "planName")
+     */
+    private $planName;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdPlanCreateMessagePlanDiscount, "planDiscount")
-	*/
-	private $planDiscount;
+    public function setMaxCost($maxCost)
+    {
+        $this->maxCost = $maxCost;
+    }
 
-	/**
-	* @JsonProperty(String, "planName")
-	*/
-	private $planName;
+    public function setPlanDiscount($planDiscount)
+    {
+        $this->planDiscount = $planDiscount;
+    }
 
-	public function setMaxCost($maxCost)
-	{
-		$this->maxCost = $maxCost;
-	}
-
-	public function setPlanDiscount($planDiscount)
-	{
-		$this->planDiscount = $planDiscount;
-	}
-
-	public function setPlanName($planName)
-	{
-		$this->planName = $planName;
-	}
-
+    public function setPlanName($planName)
+    {
+        $this->planName = $planName;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdPlanCreateMessagePlanDiscount extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdPlanCreateMessagePlanDiscountDiscountsItem>, "discounts")
+     */
+    private $discounts;
 
-	}
-
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdPlanCreateMessagePlanDiscountDiscountsItem>, "discounts")
-	*/
-	private $discounts;
-
-	public function setDiscounts($discounts)
-	{
-		$this->discounts = $discounts;
-	}
-
+    public function setDiscounts($discounts)
+    {
+        $this->discounts = $discounts;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdPlanCreateMessagePlanDiscountDiscountsItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Integer, "index")
+     */
+    private $index;
 
-	}
+    /**
+     * @JsonProperty(Integer, "rate")
+     */
+    private $rate;
 
-	/**
-	* @JsonProperty(Integer, "index")
-	*/
-	private $index;
+    public function setIndex($index)
+    {
+        $this->index = $index;
+    }
 
-	/**
-	* @JsonProperty(Integer, "rate")
-	*/
-	private $rate;
-
-	public function setIndex($index)
-	{
-		$this->index = $index;
-	}
-
-	public function setRate($rate)
-	{
-		$this->rate = $rate;
-	}
-
+    public function setRate($rate)
+    {
+        $this->rate = $rate;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdCreativeCreateMessagesListItem>, "adCreativeCreateMessagesList")
+     */
+    private $adCreativeCreateMessagesList;
 
-	}
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdKeywordCreateMessageListItem>, "adKeywordCreateMessageList")
+     */
+    private $adKeywordCreateMessageList;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdCreativeCreateMessagesListItem>, "adCreativeCreateMessagesList")
-	*/
-	private $adCreativeCreateMessagesList;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdKeywordSetMessage, "adKeywordSetMessage")
+     */
+    private $adKeywordSetMessage;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdKeywordCreateMessageListItem>, "adKeywordCreateMessageList")
-	*/
-	private $adKeywordCreateMessageList;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdProductCreateMessage, "adProductCreateMessage")
+     */
+    private $adProductCreateMessage;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdKeywordSetMessage, "adKeywordSetMessage")
-	*/
-	private $adKeywordSetMessage;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdUnitCreateMessage, "adUnitCreateMessage")
+     */
+    private $adUnitCreateMessage;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdProductCreateMessage, "adProductCreateMessage")
-	*/
-	private $adProductCreateMessage;
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItem>, "audienceBidCreateMessageList")
+     */
+    private $audienceBidCreateMessageList;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdUnitCreateMessage, "adUnitCreateMessage")
-	*/
-	private $adUnitCreateMessage;
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemLocationBidCreateMessageListItem>, "locationBidCreateMessageList")
+     */
+    private $locationBidCreateMessageList;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItem>, "audienceBidCreateMessageList")
-	*/
-	private $audienceBidCreateMessageList;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemSmartCreativeCreateMessage, "smartCreativeCreateMessage")
+     */
+    private $smartCreativeCreateMessage;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemLocationBidCreateMessageListItem>, "locationBidCreateMessageList")
-	*/
-	private $locationBidCreateMessageList;
+    public function setAdCreativeCreateMessagesList($adCreativeCreateMessagesList)
+    {
+        $this->adCreativeCreateMessagesList = $adCreativeCreateMessagesList;
+    }
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemSmartCreativeCreateMessage, "smartCreativeCreateMessage")
-	*/
-	private $smartCreativeCreateMessage;
+    public function setAdKeywordCreateMessageList($adKeywordCreateMessageList)
+    {
+        $this->adKeywordCreateMessageList = $adKeywordCreateMessageList;
+    }
 
-	public function setAdCreativeCreateMessagesList($adCreativeCreateMessagesList)
-	{
-		$this->adCreativeCreateMessagesList = $adCreativeCreateMessagesList;
-	}
+    public function setAdKeywordSetMessage($adKeywordSetMessage)
+    {
+        $this->adKeywordSetMessage = $adKeywordSetMessage;
+    }
 
-	public function setAdKeywordCreateMessageList($adKeywordCreateMessageList)
-	{
-		$this->adKeywordCreateMessageList = $adKeywordCreateMessageList;
-	}
+    public function setAdProductCreateMessage($adProductCreateMessage)
+    {
+        $this->adProductCreateMessage = $adProductCreateMessage;
+    }
 
-	public function setAdKeywordSetMessage($adKeywordSetMessage)
-	{
-		$this->adKeywordSetMessage = $adKeywordSetMessage;
-	}
+    public function setAdUnitCreateMessage($adUnitCreateMessage)
+    {
+        $this->adUnitCreateMessage = $adUnitCreateMessage;
+    }
 
-	public function setAdProductCreateMessage($adProductCreateMessage)
-	{
-		$this->adProductCreateMessage = $adProductCreateMessage;
-	}
+    public function setAudienceBidCreateMessageList($audienceBidCreateMessageList)
+    {
+        $this->audienceBidCreateMessageList = $audienceBidCreateMessageList;
+    }
 
-	public function setAdUnitCreateMessage($adUnitCreateMessage)
-	{
-		$this->adUnitCreateMessage = $adUnitCreateMessage;
-	}
+    public function setLocationBidCreateMessageList($locationBidCreateMessageList)
+    {
+        $this->locationBidCreateMessageList = $locationBidCreateMessageList;
+    }
 
-	public function setAudienceBidCreateMessageList($audienceBidCreateMessageList)
-	{
-		$this->audienceBidCreateMessageList = $audienceBidCreateMessageList;
-	}
-
-	public function setLocationBidCreateMessageList($locationBidCreateMessageList)
-	{
-		$this->locationBidCreateMessageList = $locationBidCreateMessageList;
-	}
-
-	public function setSmartCreativeCreateMessage($smartCreativeCreateMessage)
-	{
-		$this->smartCreativeCreateMessage = $smartCreativeCreateMessage;
-	}
-
+    public function setSmartCreativeCreateMessage($smartCreativeCreateMessage)
+    {
+        $this->smartCreativeCreateMessage = $smartCreativeCreateMessage;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdCreativeCreateMessagesListItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdCreativeCreateMessagesListItemAdImageVOListItem>, "adImageVOList")
+     */
+    private $adImageVOList;
 
-	}
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdCreativeCreateMessagesListItemAdTextVOListItem>, "adTextVOList")
+     */
+    private $adTextVOList;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdCreativeCreateMessagesListItemAdImageVOListItem>, "adImageVOList")
-	*/
-	private $adImageVOList;
+    /**
+     * @JsonProperty(Long, "creativeSpecificationId")
+     */
+    private $creativeSpecificationId;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdCreativeCreateMessagesListItemAdTextVOListItem>, "adTextVOList")
-	*/
-	private $adTextVOList;
+    public function setAdImageVOList($adImageVOList)
+    {
+        $this->adImageVOList = $adImageVOList;
+    }
 
-	/**
-	* @JsonProperty(Long, "creativeSpecificationId")
-	*/
-	private $creativeSpecificationId;
+    public function setAdTextVOList($adTextVOList)
+    {
+        $this->adTextVOList = $adTextVOList;
+    }
 
-	public function setAdImageVOList($adImageVOList)
-	{
-		$this->adImageVOList = $adImageVOList;
-	}
-
-	public function setAdTextVOList($adTextVOList)
-	{
-		$this->adTextVOList = $adTextVOList;
-	}
-
-	public function setCreativeSpecificationId($creativeSpecificationId)
-	{
-		$this->creativeSpecificationId = $creativeSpecificationId;
-	}
-
+    public function setCreativeSpecificationId($creativeSpecificationId)
+    {
+        $this->creativeSpecificationId = $creativeSpecificationId;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdCreativeCreateMessagesListItemAdImageVOListItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "imageUrl")
+     */
+    private $imageUrl;
 
-	}
-
-	/**
-	* @JsonProperty(String, "imageUrl")
-	*/
-	private $imageUrl;
-
-	public function setImageUrl($imageUrl)
-	{
-		$this->imageUrl = $imageUrl;
-	}
-
+    public function setImageUrl($imageUrl)
+    {
+        $this->imageUrl = $imageUrl;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdCreativeCreateMessagesListItemAdTextVOListItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "text")
+     */
+    private $text;
 
-	}
-
-	/**
-	* @JsonProperty(String, "text")
-	*/
-	private $text;
-
-	public function setText($text)
-	{
-		$this->text = $text;
-	}
-
+    public function setText($text)
+    {
+        $this->text = $text;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdKeywordCreateMessageListItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Long, "bid")
+     */
+    private $bid;
 
-	}
+    /**
+     * @JsonProperty(Long, "premiumRate")
+     */
+    private $premiumRate;
 
-	/**
-	* @JsonProperty(Long, "bid")
-	*/
-	private $bid;
+    /**
+     * @JsonProperty(String, "word")
+     */
+    private $word;
 
-	/**
-	* @JsonProperty(Long, "premiumRate")
-	*/
-	private $premiumRate;
+    public function setBid($bid)
+    {
+        $this->bid = $bid;
+    }
 
-	/**
-	* @JsonProperty(String, "word")
-	*/
-	private $word;
+    public function setPremiumRate($premiumRate)
+    {
+        $this->premiumRate = $premiumRate;
+    }
 
-	public function setBid($bid)
-	{
-		$this->bid = $bid;
-	}
-
-	public function setPremiumRate($premiumRate)
-	{
-		$this->premiumRate = $premiumRate;
-	}
-
-	public function setWord($word)
-	{
-		$this->word = $word;
-	}
-
+    public function setWord($word)
+    {
+        $this->word = $word;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdKeywordSetMessage extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Long, "keywordSetBid")
+     */
+    private $keywordSetBid;
 
-	}
+    /**
+     * @JsonProperty(Integer, "performanceGoal")
+     */
+    private $performanceGoal;
 
-	/**
-	* @JsonProperty(Long, "keywordSetBid")
-	*/
-	private $keywordSetBid;
+    public function setKeywordSetBid($keywordSetBid)
+    {
+        $this->keywordSetBid = $keywordSetBid;
+    }
 
-	/**
-	* @JsonProperty(Integer, "performanceGoal")
-	*/
-	private $performanceGoal;
-
-	public function setKeywordSetBid($keywordSetBid)
-	{
-		$this->keywordSetBid = $keywordSetBid;
-	}
-
-	public function setPerformanceGoal($performanceGoal)
-	{
-		$this->performanceGoal = $performanceGoal;
-	}
-
+    public function setPerformanceGoal($performanceGoal)
+    {
+        $this->performanceGoal = $performanceGoal;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdProductCreateMessage extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Long, "goodsId")
+     */
+    private $goodsId;
 
-	}
-
-	/**
-	* @JsonProperty(Long, "goodsId")
-	*/
-	private $goodsId;
-
-	public function setGoodsId($goodsId)
-	{
-		$this->goodsId = $goodsId;
-	}
-
+    public function setGoodsId($goodsId)
+    {
+        $this->goodsId = $goodsId;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdUnitCreateMessage extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "adName")
+     */
+    private $adName;
 
-	}
+    /**
+     * @JsonProperty(Long, "bid")
+     */
+    private $bid;
 
-	/**
-	* @JsonProperty(String, "adName")
-	*/
-	private $adName;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdUnitCreateMessageOptimizationMessage, "optimizationMessage")
+     */
+    private $optimizationMessage;
 
-	/**
-	* @JsonProperty(Long, "bid")
-	*/
-	private $bid;
+    public function setAdName($adName)
+    {
+        $this->adName = $adName;
+    }
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdUnitCreateMessageOptimizationMessage, "optimizationMessage")
-	*/
-	private $optimizationMessage;
+    public function setBid($bid)
+    {
+        $this->bid = $bid;
+    }
 
-	public function setAdName($adName)
-	{
-		$this->adName = $adName;
-	}
-
-	public function setBid($bid)
-	{
-		$this->bid = $bid;
-	}
-
-	public function setOptimizationMessage($optimizationMessage)
-	{
-		$this->optimizationMessage = $optimizationMessage;
-	}
-
+    public function setOptimizationMessage($optimizationMessage)
+    {
+        $this->optimizationMessage = $optimizationMessage;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAdUnitCreateMessageOptimizationMessage extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Long, "accumulationBid")
+     */
+    private $accumulationBid;
 
-	}
+    /**
+     * @JsonProperty(Long, "optimizationBid")
+     */
+    private $optimizationBid;
 
-	/**
-	* @JsonProperty(Long, "accumulationBid")
-	*/
-	private $accumulationBid;
+    /**
+     * @JsonProperty(Integer, "optimizationGoal")
+     */
+    private $optimizationGoal;
 
-	/**
-	* @JsonProperty(Long, "optimizationBid")
-	*/
-	private $optimizationBid;
+    /**
+     * @JsonProperty(Integer, "optimizationMethod")
+     */
+    private $optimizationMethod;
 
-	/**
-	* @JsonProperty(Integer, "optimizationGoal")
-	*/
-	private $optimizationGoal;
+    public function setAccumulationBid($accumulationBid)
+    {
+        $this->accumulationBid = $accumulationBid;
+    }
 
-	/**
-	* @JsonProperty(Integer, "optimizationMethod")
-	*/
-	private $optimizationMethod;
+    public function setOptimizationBid($optimizationBid)
+    {
+        $this->optimizationBid = $optimizationBid;
+    }
 
-	public function setAccumulationBid($accumulationBid)
-	{
-		$this->accumulationBid = $accumulationBid;
-	}
+    public function setOptimizationGoal($optimizationGoal)
+    {
+        $this->optimizationGoal = $optimizationGoal;
+    }
 
-	public function setOptimizationBid($optimizationBid)
-	{
-		$this->optimizationBid = $optimizationBid;
-	}
-
-	public function setOptimizationGoal($optimizationGoal)
-	{
-		$this->optimizationGoal = $optimizationGoal;
-	}
-
-	public function setOptimizationMethod($optimizationMethod)
-	{
-		$this->optimizationMethod = $optimizationMethod;
-	}
-
+    public function setOptimizationMethod($optimizationMethod)
+    {
+        $this->optimizationMethod = $optimizationMethod;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItemAdTargetingCreateMessage, "adTargetingCreateMessage")
+     */
+    private $adTargetingCreateMessage;
 
-	}
+    /**
+     * @JsonProperty(Long, "bidReferenceId")
+     */
+    private $bidReferenceId;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItemAdTargetingCreateMessage, "adTargetingCreateMessage")
-	*/
-	private $adTargetingCreateMessage;
+    /**
+     * @JsonProperty(Long, "bidValue")
+     */
+    private $bidValue;
 
-	/**
-	* @JsonProperty(Long, "bidReferenceId")
-	*/
-	private $bidReferenceId;
+    /**
+     * @JsonProperty(Long, "subBidReferenceId")
+     */
+    private $subBidReferenceId;
 
-	/**
-	* @JsonProperty(Long, "bidValue")
-	*/
-	private $bidValue;
+    public function setAdTargetingCreateMessage($adTargetingCreateMessage)
+    {
+        $this->adTargetingCreateMessage = $adTargetingCreateMessage;
+    }
 
-	/**
-	* @JsonProperty(Long, "subBidReferenceId")
-	*/
-	private $subBidReferenceId;
+    public function setBidReferenceId($bidReferenceId)
+    {
+        $this->bidReferenceId = $bidReferenceId;
+    }
 
-	public function setAdTargetingCreateMessage($adTargetingCreateMessage)
-	{
-		$this->adTargetingCreateMessage = $adTargetingCreateMessage;
-	}
+    public function setBidValue($bidValue)
+    {
+        $this->bidValue = $bidValue;
+    }
 
-	public function setBidReferenceId($bidReferenceId)
-	{
-		$this->bidReferenceId = $bidReferenceId;
-	}
-
-	public function setBidValue($bidValue)
-	{
-		$this->bidValue = $bidValue;
-	}
-
-	public function setSubBidReferenceId($subBidReferenceId)
-	{
-		$this->subBidReferenceId = $subBidReferenceId;
-	}
-
+    public function setSubBidReferenceId($subBidReferenceId)
+    {
+        $this->subBidReferenceId = $subBidReferenceId;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItemAdTargetingCreateMessage extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItemAdTargetingCreateMessageAdTargetingSet, "adTargetingSet")
+     */
+    private $adTargetingSet;
 
-	}
+    /**
+     * @JsonProperty(String, "targetingName")
+     */
+    private $targetingName;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItemAdTargetingCreateMessageAdTargetingSet, "adTargetingSet")
-	*/
-	private $adTargetingSet;
+    public function setAdTargetingSet($adTargetingSet)
+    {
+        $this->adTargetingSet = $adTargetingSet;
+    }
 
-	/**
-	* @JsonProperty(String, "targetingName")
-	*/
-	private $targetingName;
-
-	public function setAdTargetingSet($adTargetingSet)
-	{
-		$this->adTargetingSet = $adTargetingSet;
-	}
-
-	public function setTargetingName($targetingName)
-	{
-		$this->targetingName = $targetingName;
-	}
-
+    public function setTargetingName($targetingName)
+    {
+        $this->targetingName = $targetingName;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItemAdTargetingCreateMessageAdTargetingSet extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItemAdTargetingCreateMessageAdTargetingSetAreaStruct, "areaStruct")
+     */
+    private $areaStruct;
 
-	}
-
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItemAdTargetingCreateMessageAdTargetingSetAreaStruct, "areaStruct")
-	*/
-	private $areaStruct;
-
-	public function setAreaStruct($areaStruct)
-	{
-		$this->areaStruct = $areaStruct;
-	}
-
+    public function setAreaStruct($areaStruct)
+    {
+        $this->areaStruct = $areaStruct;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemAudienceBidCreateMessageListItemAdTargetingCreateMessageAdTargetingSetAreaStruct extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(List<Integer>, "areaIds")
+     */
+    private $areaIds;
 
-	}
-
-	/**
-	* @JsonProperty(List<Integer>, "areaIds")
-	*/
-	private $areaIds;
-
-	public function setAreaIds($areaIds)
-	{
-		$this->areaIds = $areaIds;
-	}
-
+    public function setAreaIds($areaIds)
+    {
+        $this->areaIds = $areaIds;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemLocationBidCreateMessageListItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Long, "bidReferenceId")
+     */
+    private $bidReferenceId;
 
-	}
+    /**
+     * @JsonProperty(Long, "bidValue")
+     */
+    private $bidValue;
 
-	/**
-	* @JsonProperty(Long, "bidReferenceId")
-	*/
-	private $bidReferenceId;
+    public function setBidReferenceId($bidReferenceId)
+    {
+        $this->bidReferenceId = $bidReferenceId;
+    }
 
-	/**
-	* @JsonProperty(Long, "bidValue")
-	*/
-	private $bidValue;
-
-	public function setBidReferenceId($bidReferenceId)
-	{
-		$this->bidReferenceId = $bidReferenceId;
-	}
-
-	public function setBidValue($bidValue)
-	{
-		$this->bidValue = $bidValue;
-	}
-
+    public function setBidValue($bidValue)
+    {
+        $this->bidValue = $bidValue;
+    }
 }
 
 class PddAdApiPlanCreateRequest_AdUnitCreateComplexMessageListItemSmartCreativeCreateMessage extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Integer, "creativeFlowRate")
+     */
+    private $creativeFlowRate;
 
-	}
+    /**
+     * @JsonProperty(Integer, "enableSmartCreative")
+     */
+    private $enableSmartCreative;
 
-	/**
-	* @JsonProperty(Integer, "creativeFlowRate")
-	*/
-	private $creativeFlowRate;
+    /**
+     * @JsonProperty(String, "smartCreativeTitle")
+     */
+    private $smartCreativeTitle;
 
-	/**
-	* @JsonProperty(Integer, "enableSmartCreative")
-	*/
-	private $enableSmartCreative;
+    public function setCreativeFlowRate($creativeFlowRate)
+    {
+        $this->creativeFlowRate = $creativeFlowRate;
+    }
 
-	/**
-	* @JsonProperty(String, "smartCreativeTitle")
-	*/
-	private $smartCreativeTitle;
+    public function setEnableSmartCreative($enableSmartCreative)
+    {
+        $this->enableSmartCreative = $enableSmartCreative;
+    }
 
-	public function setCreativeFlowRate($creativeFlowRate)
-	{
-		$this->creativeFlowRate = $creativeFlowRate;
-	}
-
-	public function setEnableSmartCreative($enableSmartCreative)
-	{
-		$this->enableSmartCreative = $enableSmartCreative;
-	}
-
-	public function setSmartCreativeTitle($smartCreativeTitle)
-	{
-		$this->smartCreativeTitle = $smartCreativeTitle;
-	}
-
+    public function setSmartCreativeTitle($smartCreativeTitle)
+    {
+        $this->smartCreativeTitle = $smartCreativeTitle;
+    }
 }

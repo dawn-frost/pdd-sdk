@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddPromotionLimitedActivityCreateRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddPromotionLimitedActivityCreateRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddPromotionLimitedActivityCreateRequest_RequestItem>, "request")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddPromotionLimitedActivityCreateRequest_RequestItem>, "request")
 	*/
 	private $request;
 
@@ -82,7 +82,7 @@ class PddPromotionLimitedActivityCreateRequest_RequestItem extends PopBaseJsonEn
 	private $quantity;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddPromotionLimitedActivityCreateRequest_RequestItemSkuPriceListItem>, "sku_price_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddPromotionLimitedActivityCreateRequest_RequestItemSkuPriceListItem>, "sku_price_list")
 	*/
 	private $skuPriceList;
 

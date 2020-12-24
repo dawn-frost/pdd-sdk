@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddTrainCallbackGrabRequest extends PopBaseHttpRequest
 {
@@ -71,7 +71,7 @@ class PddTrainCallbackGrabRequest extends PopBaseHttpRequest
 	private $orderTime;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTrainCallbackGrabRequest_PassengersItem>, "passengers")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTrainCallbackGrabRequest_PassengersItem>, "passengers")
 	*/
 	private $passengers;
 

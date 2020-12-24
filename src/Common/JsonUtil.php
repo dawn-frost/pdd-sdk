@@ -1,5 +1,5 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Common;
+namespace DawnFrost\Pdd\Common;
 
 /**
  * 全局处理字符串

@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddExpressAddDepotRequest extends PopBaseHttpRequest
 {
@@ -51,7 +51,7 @@ class PddExpressAddDepotRequest extends PopBaseHttpRequest
 	private $depotProvinceId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddExpressAddDepotRequest_tring, Map<String, List<String>>>, "depot_region")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddExpressAddDepotRequest_tring, Map<String, List<String>>>, "depot_region")
 	*/
 	private $depotRegion;
 

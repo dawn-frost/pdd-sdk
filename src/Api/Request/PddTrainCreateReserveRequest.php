@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddTrainCreateReserveRequest extends PopBaseHttpRequest
 {
@@ -71,7 +71,7 @@ class PddTrainCreateReserveRequest extends PopBaseHttpRequest
 	private $switchAccount;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTrainCreateReserveRequest_PassengerInfosItem>, "passenger_infos")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTrainCreateReserveRequest_PassengerInfosItem>, "passenger_infos")
 	*/
 	private $passengerInfos;
 

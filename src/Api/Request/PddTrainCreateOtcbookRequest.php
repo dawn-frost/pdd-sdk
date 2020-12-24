@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddTrainCreateOtcbookRequest extends PopBaseHttpRequest
 {
@@ -56,12 +56,12 @@ class PddTrainCreateOtcbookRequest extends PopBaseHttpRequest
 	private $pddOrderId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTrainCreateOtcbookRequest_OtcChooseSeatItem>, "otc_choose_seat")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTrainCreateOtcbookRequest_OtcChooseSeatItem>, "otc_choose_seat")
 	*/
 	private $otcChooseSeat;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTrainCreateOtcbookRequest_PassengerInfosItem>, "passenger_infos")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTrainCreateOtcbookRequest_PassengerInfosItem>, "passenger_infos")
 	*/
 	private $passengerInfos;
 

@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddOpenMsgServiceSendMsgRequest extends PopBaseHttpRequest
 {
@@ -26,7 +26,7 @@ class PddOpenMsgServiceSendMsgRequest extends PopBaseHttpRequest
 	private $templateCode;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddOpenMsgServiceSendMsgRequest_tring, String>, "template_param")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddOpenMsgServiceSendMsgRequest_tring, String>, "template_param")
 	*/
 	private $templateParam;
 

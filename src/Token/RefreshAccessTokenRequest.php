@@ -1,7 +1,7 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Token;
+namespace DawnFrost\Pdd\Token;
 
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 /**
  * RefreshAccessToken request类

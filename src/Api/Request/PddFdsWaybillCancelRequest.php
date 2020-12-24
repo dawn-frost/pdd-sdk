@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFdsWaybillCancelRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddFdsWaybillCancelRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddFdsWaybillCancelRequest_InnerPddFdsWaybillCancelRequest, "pdd_fds_waybill_cancel_request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddFdsWaybillCancelRequest_InnerPddFdsWaybillCancelRequest, "pdd_fds_waybill_cancel_request")
 	*/
 	private $pddFdsWaybillCancelRequest;
 

@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddKttGoodsCreateSpecRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddKttGoodsCreateSpecRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddKttGoodsCreateSpecRequest_tring, List<String>>, "spec_map")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddKttGoodsCreateSpecRequest_tring, List<String>>, "spec_map")
 	*/
 	private $specMap;
 

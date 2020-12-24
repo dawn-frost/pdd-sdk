@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddEinvoiceVendorRuihongIssueInvoiceRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddEinvoiceVendorRuihongIssueInvoiceRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_Request, "request")
 	*/
 	private $request;
 
@@ -62,12 +62,12 @@ class PddEinvoiceVendorRuihongIssueInvoiceRequest_Request extends PopBaseJsonEnt
 	private $postTime;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestOrder, "order")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestOrder, "order")
 	*/
 	private $order;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestInvoice, "invoice")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestInvoice, "invoice")
 	*/
 	private $invoice;
 
@@ -82,12 +82,12 @@ class PddEinvoiceVendorRuihongIssueInvoiceRequest_Request extends PopBaseJsonEnt
 	private $cmdName;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestExtendedParams, "extendedParams")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestExtendedParams, "extendedParams")
 	*/
 	private $extendedParams;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestDynamicParams, "dynamicParams")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestDynamicParams, "dynamicParams")
 	*/
 	private $dynamicParams;
 
@@ -252,7 +252,7 @@ class PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestInvoice extends PopBase
 	private $remark;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestInvoiceItemsItem>, "items")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddEinvoiceVendorRuihongIssueInvoiceRequest_RequestInvoiceItemsItem>, "items")
 	*/
 	private $items;
 

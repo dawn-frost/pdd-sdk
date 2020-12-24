@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddWmsWareinformSendRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddWmsWareinformSendRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsWareinformSendRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsWareinformSendRequest_Request, "request")
 	*/
 	private $request;
 
@@ -57,7 +57,7 @@ class PddWmsWareinformSendRequest_Request extends PopBaseJsonEntity
 	private $ownerCode;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsWareinformSendRequest_RequestWare, "ware")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsWareinformSendRequest_RequestWare, "ware")
 	*/
 	private $ware;
 

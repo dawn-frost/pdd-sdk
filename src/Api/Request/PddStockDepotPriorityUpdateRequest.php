@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddStockDepotPriorityUpdateRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddStockDepotPriorityUpdateRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddStockDepotPriorityUpdateRequest_PriorityListItem>, "priority_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddStockDepotPriorityUpdateRequest_PriorityListItem>, "priority_list")
 	*/
 	private $priorityList;
 

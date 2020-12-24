@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddTrainGrabCreateRequest extends PopBaseHttpRequest
 {
@@ -51,12 +51,12 @@ class PddTrainGrabCreateRequest extends PopBaseHttpRequest
 	private $seatTypes;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTrainGrabCreateRequest_TravelInfosItem>, "travel_infos")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTrainGrabCreateRequest_TravelInfosItem>, "travel_infos")
 	*/
 	private $travelInfos;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTrainGrabCreateRequest_PassengerInfosItem>, "passenger_infos")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTrainGrabCreateRequest_PassengerInfosItem>, "passenger_infos")
 	*/
 	private $passengerInfos;
 

@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddDdkOauthGoodsSearchRequest extends PopBaseHttpRequest
 {
@@ -86,7 +86,7 @@ class PddDdkOauthGoodsSearchRequest extends PopBaseHttpRequest
 	private $pid;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddDdkOauthGoodsSearchRequest_RangeListItem>, "range_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddDdkOauthGoodsSearchRequest_RangeListItem>, "range_list")
 	*/
 	private $rangeList;
 

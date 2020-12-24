@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk;
+namespace DawnFrost\Pdd;
 
-use Com\Pdd\Pop\Sdk\Token\AccessTokenRequest;
-use Com\Pdd\Pop\Sdk\Token\RefreshAccessTokenRequest;
+use DawnFrost\Pdd\Token\AccessTokenRequest;
+use DawnFrost\Pdd\Token\RefreshAccessTokenRequest;
 
 /**
  * Pop接口调用的客户端类

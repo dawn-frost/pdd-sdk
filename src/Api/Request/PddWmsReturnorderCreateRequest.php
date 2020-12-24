@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddWmsReturnorderCreateRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddWmsReturnorderCreateRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsReturnorderCreateRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsReturnorderCreateRequest_Request, "request")
 	*/
 	private $request;
 
@@ -62,7 +62,7 @@ class PddWmsReturnorderCreateRequest_Request extends PopBaseJsonEntity
 	private $orderFlag;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsReturnorderCreateRequest_RequestOrderLinesItem>, "orderLines")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddWmsReturnorderCreateRequest_RequestOrderLinesItem>, "orderLines")
 	*/
 	private $orderLines;
 

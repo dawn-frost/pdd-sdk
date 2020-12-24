@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFlightCallbackConfirmOrderRequest extends PopBaseHttpRequest
 {
@@ -21,7 +21,7 @@ class PddFlightCallbackConfirmOrderRequest extends PopBaseHttpRequest
 	private $errorMsg;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightCallbackConfirmOrderRequest_FlightInfoListItem>, "flight_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightCallbackConfirmOrderRequest_FlightInfoListItem>, "flight_info_list")
 	*/
 	private $flightInfoList;
 
@@ -36,7 +36,7 @@ class PddFlightCallbackConfirmOrderRequest extends PopBaseHttpRequest
 	private $parentTravelSn;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightCallbackConfirmOrderRequest_PassengerInfoListItem>, "passenger_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightCallbackConfirmOrderRequest_PassengerInfoListItem>, "passenger_info_list")
 	*/
 	private $passengerInfoList;
 
@@ -199,7 +199,7 @@ class PddFlightCallbackConfirmOrderRequest_FlightInfoListItem extends PopBaseJso
 	private $arrivalTerminal;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightCallbackConfirmOrderRequest_FlightInfoListItemCabinInfoListItem>, "cabin_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightCallbackConfirmOrderRequest_FlightInfoListItemCabinInfoListItem>, "cabin_info_list")
 	*/
 	private $cabinInfoList;
 

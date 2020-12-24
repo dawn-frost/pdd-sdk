@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddTicketOrderCreateNotifycationRequest extends PopBaseHttpRequest
 {
@@ -41,7 +41,7 @@ class PddTicketOrderCreateNotifycationRequest extends PopBaseHttpRequest
 	private $status;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTicketOrderCreateNotifycationRequest_TicketsItem>, "tickets")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTicketOrderCreateNotifycationRequest_TicketsItem>, "tickets")
 	*/
 	private $tickets;
 

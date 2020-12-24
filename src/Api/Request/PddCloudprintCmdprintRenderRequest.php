@@ -1,274 +1,261 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+namespace DawnFrost\Pdd\Api\Request;
+
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddCloudprintCmdprintRenderRequest extends PopBaseHttpRequest
 {
     public function __construct()
-	{
+    {
+    }
 
-	}
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudprintCmdprintRenderRequest_Request, "request")
-	*/
-	private $request;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddCloudprintCmdprintRenderRequest_Request, "request")
+     */
+    private $request;
 
-	protected function setUserParams(&$params)
-	{
-		$this->setUserParam($params, "request", $this->request);
+    protected function setUserParams(&$params)
+    {
+        $this->setUserParam($params, 'request', $this->request);
+    }
 
-	}
+    public function getVersion()
+    {
+        return 'V1';
+    }
 
-	public function getVersion()
-	{
-		return "V1";
-	}
+    public function getDataType()
+    {
+        return 'JSON';
+    }
 
-	public function getDataType()
-	{
-		return "JSON";
-	}
+    public function getType()
+    {
+        return 'pdd.cloudprint.cmdprint.render';
+    }
 
-	public function getType()
-	{
-		return "pdd.cloudprint.cmdprint.render";
-	}
-
-	public function setRequest($request)
-	{
-		$this->request = $request;
-	}
-
+    public function setRequest($request)
+    {
+        $this->request = $request;
+    }
 }
 
 class PddCloudprintCmdprintRenderRequest_Request extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "client_side_id")
+     */
+    private $clientSideId;
 
-	}
+    /**
+     * @JsonProperty(String, "client_type")
+     */
+    private $clientType;
 
-	/**
-	* @JsonProperty(String, "client_side_id")
-	*/
-	private $clientSideId;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddCloudprintCmdprintRenderRequest_RequestConfig, "config")
+     */
+    private $config;
 
-	/**
-	* @JsonProperty(String, "client_type")
-	*/
-	private $clientType;
+    /**
+     * @JsonProperty(\DawnFrost\Pdd\Api\Request\PddCloudprintCmdprintRenderRequest_RequestDocument, "document")
+     */
+    private $document;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudprintCmdprintRenderRequest_RequestConfig, "config")
-	*/
-	private $config;
+    /**
+     * @JsonProperty(String, "printer_name")
+     */
+    private $printerName;
 
-	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddCloudprintCmdprintRenderRequest_RequestDocument, "document")
-	*/
-	private $document;
+    /**
+     * @JsonProperty(String, "print_command_type")
+     */
+    private $printCommandType;
 
-	/**
-	* @JsonProperty(String, "printer_name")
-	*/
-	private $printerName;
+    public function setClientSideId($clientSideId)
+    {
+        $this->clientSideId = $clientSideId;
+    }
 
-	/**
-	* @JsonProperty(String, "print_command_type")
-	*/
-	private $printCommandType;
+    public function setClientType($clientType)
+    {
+        $this->clientType = $clientType;
+    }
 
-	public function setClientSideId($clientSideId)
-	{
-		$this->clientSideId = $clientSideId;
-	}
+    public function setConfig($config)
+    {
+        $this->config = $config;
+    }
 
-	public function setClientType($clientType)
-	{
-		$this->clientType = $clientType;
-	}
+    public function setDocument($document)
+    {
+        $this->document = $document;
+    }
 
-	public function setConfig($config)
-	{
-		$this->config = $config;
-	}
+    public function setPrinterName($printerName)
+    {
+        $this->printerName = $printerName;
+    }
 
-	public function setDocument($document)
-	{
-		$this->document = $document;
-	}
-
-	public function setPrinterName($printerName)
-	{
-		$this->printerName = $printerName;
-	}
-
-	public function setPrintCommandType($printCommandType)
-	{
-		$this->printCommandType = $printCommandType;
-	}
-
+    public function setPrintCommandType($printCommandType)
+    {
+        $this->printCommandType = $printCommandType;
+    }
 }
 
 class PddCloudprintCmdprintRenderRequest_RequestConfig extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Double, "horizontal_offset")
+     */
+    private $horizontalOffset;
 
-	}
+    /**
+     * @JsonProperty(Boolean, "need_bottom_logo")
+     */
+    private $needBottomLogo;
 
-	/**
-	* @JsonProperty(Double, "horizontal_offset")
-	*/
-	private $horizontalOffset;
+    /**
+     * @JsonProperty(Boolean, "need_middle_logo")
+     */
+    private $needMiddleLogo;
 
-	/**
-	* @JsonProperty(Boolean, "need_bottom_logo")
-	*/
-	private $needBottomLogo;
+    /**
+     * @JsonProperty(Boolean, "need_top_logo")
+     */
+    private $needTopLogo;
 
-	/**
-	* @JsonProperty(Boolean, "need_middle_logo")
-	*/
-	private $needMiddleLogo;
+    /**
+     * @JsonProperty(String, "orientation")
+     */
+    private $orientation;
 
-	/**
-	* @JsonProperty(Boolean, "need_top_logo")
-	*/
-	private $needTopLogo;
+    /**
+     * @JsonProperty(Double, "vertical_offset")
+     */
+    private $verticalOffset;
 
-	/**
-	* @JsonProperty(String, "orientation")
-	*/
-	private $orientation;
+    public function setHorizontalOffset($horizontalOffset)
+    {
+        $this->horizontalOffset = $horizontalOffset;
+    }
 
-	/**
-	* @JsonProperty(Double, "vertical_offset")
-	*/
-	private $verticalOffset;
+    public function setNeedBottomLogo($needBottomLogo)
+    {
+        $this->needBottomLogo = $needBottomLogo;
+    }
 
-	public function setHorizontalOffset($horizontalOffset)
-	{
-		$this->horizontalOffset = $horizontalOffset;
-	}
+    public function setNeedMiddleLogo($needMiddleLogo)
+    {
+        $this->needMiddleLogo = $needMiddleLogo;
+    }
 
-	public function setNeedBottomLogo($needBottomLogo)
-	{
-		$this->needBottomLogo = $needBottomLogo;
-	}
+    public function setNeedTopLogo($needTopLogo)
+    {
+        $this->needTopLogo = $needTopLogo;
+    }
 
-	public function setNeedMiddleLogo($needMiddleLogo)
-	{
-		$this->needMiddleLogo = $needMiddleLogo;
-	}
+    public function setOrientation($orientation)
+    {
+        $this->orientation = $orientation;
+    }
 
-	public function setNeedTopLogo($needTopLogo)
-	{
-		$this->needTopLogo = $needTopLogo;
-	}
-
-	public function setOrientation($orientation)
-	{
-		$this->orientation = $orientation;
-	}
-
-	public function setVerticalOffset($verticalOffset)
-	{
-		$this->verticalOffset = $verticalOffset;
-	}
-
+    public function setVerticalOffset($verticalOffset)
+    {
+        $this->verticalOffset = $verticalOffset;
+    }
 }
 
 class PddCloudprintCmdprintRenderRequest_RequestDocument extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddCloudprintCmdprintRenderRequest_RequestDocumentContentsItem>, "contents")
+     */
+    private $contents;
 
-	}
-
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddCloudprintCmdprintRenderRequest_RequestDocumentContentsItem>, "contents")
-	*/
-	private $contents;
-
-	public function setContents($contents)
-	{
-		$this->contents = $contents;
-	}
-
+    public function setContents($contents)
+    {
+        $this->contents = $contents;
+    }
 }
 
 class PddCloudprintCmdprintRenderRequest_RequestDocumentContentsItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(String, "add_data")
+     */
+    private $addData;
 
-	}
+    /**
+     * @JsonProperty(Boolean, "encrypted")
+     */
+    private $encrypted;
 
-	/**
-	* @JsonProperty(String, "add_data")
-	*/
-	private $addData;
+    /**
+     * @JsonProperty(String, "print_data")
+     */
+    private $printData;
 
-	/**
-	* @JsonProperty(Boolean, "encrypted")
-	*/
-	private $encrypted;
+    /**
+     * @JsonProperty(String, "signature")
+     */
+    private $signature;
 
-	/**
-	* @JsonProperty(String, "print_data")
-	*/
-	private $printData;
+    /**
+     * @JsonProperty(String, "template_url")
+     */
+    private $templateUrl;
 
-	/**
-	* @JsonProperty(String, "signature")
-	*/
-	private $signature;
+    /**
+     * @JsonProperty(String, "ver")
+     */
+    private $ver;
 
-	/**
-	* @JsonProperty(String, "template_url")
-	*/
-	private $templateUrl;
+    public function setAddData($addData)
+    {
+        $this->addData = $addData;
+    }
 
-	/**
-	* @JsonProperty(String, "ver")
-	*/
-	private $ver;
+    public function setEncrypted($encrypted)
+    {
+        $this->encrypted = $encrypted;
+    }
 
-	public function setAddData($addData)
-	{
-		$this->addData = $addData;
-	}
+    public function setPrintData($printData)
+    {
+        $this->printData = $printData;
+    }
 
-	public function setEncrypted($encrypted)
-	{
-		$this->encrypted = $encrypted;
-	}
+    public function setSignature($signature)
+    {
+        $this->signature = $signature;
+    }
 
-	public function setPrintData($printData)
-	{
-		$this->printData = $printData;
-	}
+    public function setTemplateUrl($templateUrl)
+    {
+        $this->templateUrl = $templateUrl;
+    }
 
-	public function setSignature($signature)
-	{
-		$this->signature = $signature;
-	}
-
-	public function setTemplateUrl($templateUrl)
-	{
-		$this->templateUrl = $templateUrl;
-	}
-
-	public function setVer($ver)
-	{
-		$this->ver = $ver;
-	}
-
+    public function setVer($ver)
+    {
+        $this->ver = $ver;
+    }
 }

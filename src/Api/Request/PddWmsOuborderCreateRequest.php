@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddWmsOuborderCreateRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddWmsOuborderCreateRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOuborderCreateRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsOuborderCreateRequest_Request, "request")
 	*/
 	private $request;
 
@@ -52,12 +52,12 @@ class PddWmsOuborderCreateRequest_Request extends PopBaseJsonEntity
 	}
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOuborderCreateRequest_RequestOrderLineItem>, "orderLine")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddWmsOuborderCreateRequest_RequestOrderLineItem>, "orderLine")
 	*/
 	private $orderLine;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOuborderCreateRequest_RequestOubOrder, "oubOrder")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsOuborderCreateRequest_RequestOubOrder, "oubOrder")
 	*/
 	private $oubOrder;
 
@@ -127,7 +127,7 @@ class PddWmsOuborderCreateRequest_RequestOubOrder extends PopBaseJsonEntity
 	private $createTime;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOuborderCreateRequest_RequestOubOrderMallContracter, "mallContracter")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsOuborderCreateRequest_RequestOubOrderMallContracter, "mallContracter")
 	*/
 	private $mallContracter;
 
@@ -152,12 +152,12 @@ class PddWmsOuborderCreateRequest_RequestOubOrder extends PopBaseJsonEntity
 	private $planSendTime;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOuborderCreateRequest_RequestOubOrderReceiverInfo, "receiverInfo")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsOuborderCreateRequest_RequestOubOrderReceiverInfo, "receiverInfo")
 	*/
 	private $receiverInfo;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsOuborderCreateRequest_RequestOubOrderRelatedOrdersItem>, "relatedOrders")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddWmsOuborderCreateRequest_RequestOubOrderRelatedOrdersItem>, "relatedOrders")
 	*/
 	private $relatedOrders;
 

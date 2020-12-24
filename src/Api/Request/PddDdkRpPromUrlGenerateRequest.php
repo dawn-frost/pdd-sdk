@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddDdkRpPromUrlGenerateRequest extends PopBaseHttpRequest
 {
@@ -21,12 +21,12 @@ class PddDdkRpPromUrlGenerateRequest extends PopBaseHttpRequest
 	private $customParameters;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddDdkRpPromUrlGenerateRequest_DiyLotteryParam, "diy_lottery_param")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddDdkRpPromUrlGenerateRequest_DiyLotteryParam, "diy_lottery_param")
 	*/
 	private $diyLotteryParam;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddDdkRpPromUrlGenerateRequest_DiyRedPacketParam, "diy_red_packet_param")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddDdkRpPromUrlGenerateRequest_DiyRedPacketParam, "diy_red_packet_param")
 	*/
 	private $diyRedPacketParam;
 
@@ -167,7 +167,7 @@ class PddDdkRpPromUrlGenerateRequest_DiyLotteryParam extends PopBaseJsonEntity
 	private $optId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddDdkRpPromUrlGenerateRequest_DiyLotteryParamRangeItemsItem>, "range_items")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddDdkRpPromUrlGenerateRequest_DiyLotteryParamRangeItemsItem>, "range_items")
 	*/
 	private $rangeItems;
 
@@ -252,7 +252,7 @@ class PddDdkRpPromUrlGenerateRequest_DiyRedPacketParam extends PopBaseJsonEntity
 	private $optId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddDdkRpPromUrlGenerateRequest_DiyRedPacketParamRangeItemsItem>, "range_items")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddDdkRpPromUrlGenerateRequest_DiyRedPacketParamRangeItemsItem>, "range_items")
 	*/
 	private $rangeItems;
 

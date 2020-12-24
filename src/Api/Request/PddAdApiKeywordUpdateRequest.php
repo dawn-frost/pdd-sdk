@@ -1,95 +1,91 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+namespace DawnFrost\Pdd\Api\Request;
+
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddAdApiKeywordUpdateRequest extends PopBaseHttpRequest
 {
     public function __construct()
-	{
+    {
+    }
 
-	}
-	/**
-	* @JsonProperty(Long, "adId")
-	*/
-	private $adId;
+    /**
+     * @JsonProperty(Long, "adId")
+     */
+    private $adId;
 
-	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddAdApiKeywordUpdateRequest_KeywordsItem>, "keywords")
-	*/
-	private $keywords;
+    /**
+     * @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddAdApiKeywordUpdateRequest_KeywordsItem>, "keywords")
+     */
+    private $keywords;
 
-	protected function setUserParams(&$params)
-	{
-		$this->setUserParam($params, "adId", $this->adId);
-		$this->setUserParam($params, "keywords", $this->keywords);
+    protected function setUserParams(&$params)
+    {
+        $this->setUserParam($params, 'adId', $this->adId);
+        $this->setUserParam($params, 'keywords', $this->keywords);
+    }
 
-	}
+    public function getVersion()
+    {
+        return 'V1';
+    }
 
-	public function getVersion()
-	{
-		return "V1";
-	}
+    public function getDataType()
+    {
+        return 'JSON';
+    }
 
-	public function getDataType()
-	{
-		return "JSON";
-	}
+    public function getType()
+    {
+        return 'pdd.ad.api.keyword.update';
+    }
 
-	public function getType()
-	{
-		return "pdd.ad.api.keyword.update";
-	}
+    public function setAdId($adId)
+    {
+        $this->adId = $adId;
+    }
 
-	public function setAdId($adId)
-	{
-		$this->adId = $adId;
-	}
-
-	public function setKeywords($keywords)
-	{
-		$this->keywords = $keywords;
-	}
-
+    public function setKeywords($keywords)
+    {
+        $this->keywords = $keywords;
+    }
 }
 
 class PddAdApiKeywordUpdateRequest_KeywordsItem extends PopBaseJsonEntity
 {
+    public function __construct()
+    {
+    }
 
-	public function __construct()
-	{
+    /**
+     * @JsonProperty(Long, "bid")
+     */
+    private $bid;
 
-	}
+    /**
+     * @JsonProperty(Long, "keywordId")
+     */
+    private $keywordId;
 
-	/**
-	* @JsonProperty(Long, "bid")
-	*/
-	private $bid;
+    /**
+     * @JsonProperty(Long, "premiumRate")
+     */
+    private $premiumRate;
 
-	/**
-	* @JsonProperty(Long, "keywordId")
-	*/
-	private $keywordId;
+    public function setBid($bid)
+    {
+        $this->bid = $bid;
+    }
 
-	/**
-	* @JsonProperty(Long, "premiumRate")
-	*/
-	private $premiumRate;
+    public function setKeywordId($keywordId)
+    {
+        $this->keywordId = $keywordId;
+    }
 
-	public function setBid($bid)
-	{
-		$this->bid = $bid;
-	}
-
-	public function setKeywordId($keywordId)
-	{
-		$this->keywordId = $keywordId;
-	}
-
-	public function setPremiumRate($premiumRate)
-	{
-		$this->premiumRate = $premiumRate;
-	}
-
+    public function setPremiumRate($premiumRate)
+    {
+        $this->premiumRate = $premiumRate;
+    }
 }

@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddStockWareMoveRequest extends PopBaseHttpRequest
 {
@@ -11,12 +11,12 @@ class PddStockWareMoveRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddStockWareMoveRequest_StockMoveOrderActionDto, "stock_move_order_action_dto")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddStockWareMoveRequest_StockMoveOrderActionDto, "stock_move_order_action_dto")
 	*/
 	private $stockMoveOrderActionDto;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddStockWareMoveRequest_StockMoveRecordActionDtoListItem>, "stock_move_record_action_dto_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddStockWareMoveRequest_StockMoveRecordActionDtoListItem>, "stock_move_record_action_dto_list")
 	*/
 	private $stockMoveRecordActionDtoList;
 

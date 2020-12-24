@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddTicketSkuRuleEditRequest extends PopBaseHttpRequest
 {
@@ -11,17 +11,17 @@ class PddTicketSkuRuleEditRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_BookerInfoLimitation, "booker_info_limitation")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_BookerInfoLimitation, "booker_info_limitation")
 	*/
 	private $bookerInfoLimitation;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_BookingNotice, "booking_notice")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_BookingNotice, "booking_notice")
 	*/
 	private $bookingNotice;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_OrderLimitation, "order_limitation")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_OrderLimitation, "order_limitation")
 	*/
 	private $orderLimitation;
 
@@ -31,12 +31,12 @@ class PddTicketSkuRuleEditRequest extends PopBaseHttpRequest
 	private $outRuleId;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_ProviderContactInfo, "provider_contact_info")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_ProviderContactInfo, "provider_contact_info")
 	*/
 	private $providerContactInfo;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_RefundLimitations, "refund_limitations")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_RefundLimitations, "refund_limitations")
 	*/
 	private $refundLimitations;
 
@@ -56,12 +56,12 @@ class PddTicketSkuRuleEditRequest extends PopBaseHttpRequest
 	private $ruleVersion;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_TravelerInfoLimitation, "traveler_info_limitation")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_TravelerInfoLimitation, "traveler_info_limitation")
 	*/
 	private $travelerInfoLimitation;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_ValidLimitation, "valid_limitation")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_ValidLimitation, "valid_limitation")
 	*/
 	private $validLimitation;
 
@@ -197,7 +197,7 @@ class PddTicketSkuRuleEditRequest_BookingNotice extends PopBaseJsonEntity
 	private $enterAddress;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_BookingNoticeEnterTimeItem>, "enter_time")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_BookingNoticeEnterTimeItem>, "enter_time")
 	*/
 	private $enterTime;
 
@@ -237,7 +237,7 @@ class PddTicketSkuRuleEditRequest_BookingNotice extends PopBaseJsonEntity
 	private $ticketPlace;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_BookingNoticeTicketTimeItem>, "ticket_time")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_BookingNoticeTicketTimeItem>, "ticket_time")
 	*/
 	private $ticketTime;
 
@@ -432,7 +432,7 @@ class PddTicketSkuRuleEditRequest_ProviderContactInfo extends PopBaseJsonEntity
 	}
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_ProviderContactInfoProviderBusinessHourItem>, "provider_business_hour")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_ProviderContactInfoProviderBusinessHourItem>, "provider_business_hour")
 	*/
 	private $providerBusinessHour;
 
@@ -517,7 +517,7 @@ class PddTicketSkuRuleEditRequest_RefundLimitations extends PopBaseJsonEntity
 	private $isRefundable;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddTicketSkuRuleEditRequest_RefundLimitationsRefundRulesItem>, "refund_rules")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddTicketSkuRuleEditRequest_RefundLimitationsRefundRulesItem>, "refund_rules")
 	*/
 	private $refundRules;
 

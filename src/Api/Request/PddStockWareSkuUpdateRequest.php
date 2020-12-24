@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddStockWareSkuUpdateRequest extends PopBaseHttpRequest
 {
@@ -16,7 +16,7 @@ class PddStockWareSkuUpdateRequest extends PopBaseHttpRequest
 	private $wareId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddStockWareSkuUpdateRequest_WareSkusItem>, "ware_skus")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddStockWareSkuUpdateRequest_WareSkusItem>, "ware_skus")
 	*/
 	private $wareSkus;
 

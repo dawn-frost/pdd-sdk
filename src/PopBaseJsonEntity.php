@@ -1,9 +1,9 @@
 <?php
-namespace Com\Pdd\Pop\Sdk;
+namespace DawnFrost\Pdd;
 
 use \JsonSerializable;
 use \ReflectionClass;
-use Com\Pdd\Pop\Sdk\Common\JsonUtil;
+use DawnFrost\Pdd\Common\JsonUtil;
 
 /**
  * 序列化基础类

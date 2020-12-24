@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddWmsDeliveryorderConfirmRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddWmsDeliveryorderConfirmRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsDeliveryorderConfirmRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsDeliveryorderConfirmRequest_Request, "request")
 	*/
 	private $request;
 
@@ -72,7 +72,7 @@ class PddWmsDeliveryorderConfirmRequest_Request extends PopBaseJsonEntity
 	private $logisticsName;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsDeliveryorderConfirmRequest_RequestOrderLinesItem>, "orderLines")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddWmsDeliveryorderConfirmRequest_RequestOrderLinesItem>, "orderLines")
 	*/
 	private $orderLines;
 

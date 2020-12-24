@@ -1,5 +1,5 @@
 <?php
-namespace Com\Pdd\Pop\Sdk;
+namespace DawnFrost\Pdd;
 
 /**
  * Pop response 类

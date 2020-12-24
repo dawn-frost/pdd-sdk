@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFlightChangeableFlightListRequest extends PopBaseHttpRequest
 {
@@ -41,7 +41,7 @@ class PddFlightChangeableFlightListRequest extends PopBaseHttpRequest
 	private $changeDate;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightChangeableFlightListRequest_PassengerInfoListItem>, "passenger_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightChangeableFlightListRequest_PassengerInfoListItem>, "passenger_info_list")
 	*/
 	private $passengerInfoList;
 
@@ -148,7 +148,7 @@ class PddFlightChangeableFlightListRequest_PassengerInfoListItem extends PopBase
 	private $ticketNo;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightChangeableFlightListRequest_PassengerInfoListItemFlightListItem>, "flight_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightChangeableFlightListRequest_PassengerInfoListItemFlightListItem>, "flight_list")
 	*/
 	private $flightList;
 

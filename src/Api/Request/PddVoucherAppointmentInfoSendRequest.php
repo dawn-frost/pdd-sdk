@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddVoucherAppointmentInfoSendRequest extends PopBaseHttpRequest
 {
@@ -21,7 +21,7 @@ class PddVoucherAppointmentInfoSendRequest extends PopBaseHttpRequest
 	private $outBizNo;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddVoucherAppointmentInfoSendRequest_VoucherListItem>, "voucher_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddVoucherAppointmentInfoSendRequest_VoucherListItem>, "voucher_list")
 	*/
 	private $voucherList;
 

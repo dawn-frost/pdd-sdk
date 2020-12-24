@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddWmsInborderCreateRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddWmsInborderCreateRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsInborderCreateRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsInborderCreateRequest_Request, "request")
 	*/
 	private $request;
 
@@ -52,12 +52,12 @@ class PddWmsInborderCreateRequest_Request extends PopBaseJsonEntity
 	}
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsInborderCreateRequest_RequestInbOrder, "inbOrder")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsInborderCreateRequest_RequestInbOrder, "inbOrder")
 	*/
 	private $inbOrder;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsInborderCreateRequest_RequestOrderLineItem>, "orderLine")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddWmsInborderCreateRequest_RequestOrderLineItem>, "orderLine")
 	*/
 	private $orderLine;
 
@@ -92,7 +92,7 @@ class PddWmsInborderCreateRequest_RequestInbOrder extends PopBaseJsonEntity
 	private $inbOrderCode;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsInborderCreateRequest_RequestInbOrderMallContracter, "mallContracter")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsInborderCreateRequest_RequestInbOrderMallContracter, "mallContracter")
 	*/
 	private $mallContracter;
 
@@ -112,7 +112,7 @@ class PddWmsInborderCreateRequest_RequestInbOrder extends PopBaseJsonEntity
 	private $planReceiveTime;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddWmsInborderCreateRequest_RequestInbOrderRelatedOrdersItem>, "relatedOrders")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddWmsInborderCreateRequest_RequestInbOrderRelatedOrdersItem>, "relatedOrders")
 	*/
 	private $relatedOrders;
 
@@ -122,7 +122,7 @@ class PddWmsInborderCreateRequest_RequestInbOrder extends PopBaseJsonEntity
 	private $remark;
 
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddWmsInborderCreateRequest_RequestInbOrderSenderInfo, "senderInfo")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddWmsInborderCreateRequest_RequestInbOrderSenderInfo, "senderInfo")
 	*/
 	private $senderInfo;
 

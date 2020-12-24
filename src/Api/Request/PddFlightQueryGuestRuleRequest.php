@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddFlightQueryGuestRuleRequest extends PopBaseHttpRequest
 {
@@ -21,7 +21,7 @@ class PddFlightQueryGuestRuleRequest extends PopBaseHttpRequest
 	private $subTraceId;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItem>, "product_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItem>, "product_list")
 	*/
 	private $productList;
 
@@ -90,12 +90,12 @@ class PddFlightQueryGuestRuleRequest_ProductListItem extends PopBaseJsonEntity
 	private $passengerTypeList;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItemFlightInfoListItem>, "flight_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItemFlightInfoListItem>, "flight_info_list")
 	*/
 	private $flightInfoList;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItemFlightCabinInfoListItem>, "flight_cabin_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItemFlightCabinInfoListItem>, "flight_cabin_info_list")
 	*/
 	private $flightCabinInfoList;
 
@@ -255,7 +255,7 @@ class PddFlightQueryGuestRuleRequest_ProductListItemFlightCabinInfoListItem exte
 	private $sequenceNo;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItemFlightCabinInfoListItemCabinInfoListItem>, "cabin_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItemFlightCabinInfoListItemCabinInfoListItem>, "cabin_info_list")
 	*/
 	private $cabinInfoList;
 
@@ -295,7 +295,7 @@ class PddFlightQueryGuestRuleRequest_ProductListItemFlightCabinInfoListItemCabin
 	private $sequenceNo;
 
 	/**
-	* @JsonProperty(List<\Com\Pdd\Pop\Sdk\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItemFlightCabinInfoListItemCabinInfoListItemCabinInfoListItem>, "cabin_info_list")
+	* @JsonProperty(List<\DawnFrost\Pdd\Api\Request\PddFlightQueryGuestRuleRequest_ProductListItemFlightCabinInfoListItemCabinInfoListItemCabinInfoListItem>, "cabin_info_list")
 	*/
 	private $cabinInfoList;
 

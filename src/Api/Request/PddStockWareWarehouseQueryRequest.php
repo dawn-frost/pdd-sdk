@@ -1,8 +1,8 @@
 <?php
-namespace Com\Pdd\Pop\Sdk\Api\Request;
+namespace DawnFrost\Pdd\Api\Request;
 
-use Com\Pdd\Pop\Sdk\PopBaseHttpRequest;
-use Com\Pdd\Pop\Sdk\PopBaseJsonEntity;
+use DawnFrost\Pdd\PopBaseHttpRequest;
+use DawnFrost\Pdd\PopBaseJsonEntity;
 
 class PddStockWareWarehouseQueryRequest extends PopBaseHttpRequest
 {
@@ -11,7 +11,7 @@ class PddStockWareWarehouseQueryRequest extends PopBaseHttpRequest
 
 	}
 	/**
-	* @JsonProperty(\Com\Pdd\Pop\Sdk\Api\Request\PddStockWareWarehouseQueryRequest_Request, "request")
+	* @JsonProperty(\DawnFrost\Pdd\Api\Request\PddStockWareWarehouseQueryRequest_Request, "request")
 	*/
 	private $request;
 
